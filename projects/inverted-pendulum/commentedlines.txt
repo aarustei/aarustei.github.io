@@ -1,0 +1,24 @@
+<!--
+{{< paige/figure caption="Step input response comparison between the simulated model and provided Simulink model." numbered=true >}}
+{{<  paige/image src="simulation.png" width="400px"  >}}
+{{< /paige/figure >}}
+
+{{< paige/figure caption="Motor voltage u(t) for the step input response obtained from the Simulink model." numbered=true >}}
+{{<  paige/image src="vm.png" width="400px"  >}}
+{{< /paige/figure >}}
+
+{{< paige/figure caption="Pendulum angle \(\alpha(t)\) for the step input response obtained from the simulink model." numbered=true >}}
+{{<  paige/image src="alfa.png" width="400px"  >}}
+{{< /paige/figure >}}
+-->
+
+
+<!--
+{{< paige/figure caption="Experimental setup of the inverted pendulum." numbered=true >}}
+{{<  paige/image src="20211208_153013.jpg" width="500px"  >}}
+{{< /paige/figure >}}
+
+{{< paige/figure caption="Experimental results. Cart position (top), pendulum angle (bottom). On the top figure, the yellow line is reference signal, the cyan line is the linear model response and the magenta color is the experimental data. On the bottom figure, the yellow line is experimental data and magenta is the linear model." numbered=true >}}
+{{<  paige/image src="20211208_153031c.jpg" width="500px"  >}}
+{{< /paige/figure >}}
+-->

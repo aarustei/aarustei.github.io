@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Prototype Realization | Adrian&#39;s Website</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+  rel="stylesheet">
+
+
+
+<style>
+  :root {
+    --accent-color: #47b1db;
+  }
+  
+  [data-theme="dark"] {
+    --accent-color: #5fc9f0;
+  }
+  
+</style>
+
+
+
+
+
+      <script src="/js/main.js"></script>
+
+
+  
+  
+    <script>
+window.MathJax = {
+  tex: {
+	
+    tags: "ams",               
+    displayMath: [['\\[','\\]'], ['$$','$$']], 
+    inlineMath: [['\\(','\\)']],
+	processEscapes: true,      
+    processEnvironments: true, 
+    processRefs: true,         
+    
+                               
+    
+    
+    
+    
+    
+  },
+  loader: { load: ['ui/safe'] }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body class="site-wrapper">
+  <header>
+    <div class="header-wrapper">
+    <nav class="navbar" role="navigation">
+        
+        <div class="navbar-brand">
+            <a href="/">Adrian&#39;s Website</a>
+        </div>
+
+        
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        
+        <div class="navbar-menu" id="navbar-menu">
+            <div class="navbar-nav">
+               
+               
+                
+                    <a href="/about/" class="nav-link ">
+                        About
+                    </a>
+                 
+                    <a href="/publications/" class="nav-link ">
+                        Publications
+                    </a>
+                 
+                    <a href="/projects/" class="nav-link ">
+                        Projects
+                    </a>
+                 
+                    <a href="/posts/" class="nav-link ">
+                        Posts
+                    </a>
+                 
+                    <a href="/tags/" class="nav-link ">
+                        Tags
+                    </a>
+                 
+                    <a href="/files/cv_adrian_arustei.pdf" class="nav-link btn-solid">
+                        Get my CV
+                    </a>
+                
+             
+            </div>
+
+            <div class="navbar-actions">
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  </header>
+  <main class="site-main">
+    
+
+
+
+
+<article class="post-article">
+  <header class="post-header">
+    <h1 class="post-title">Prototype Realization</h1>
+    <div class="post-meta">
+      <time datetime="2019-01-18T00:00:00&#43;00:00">January 18, 2019</time>
+      <span class="post-meta-separator">•</span>
+      <span>8 min read</span>
+      
+      <span class="post-meta-separator">•</span>
+      
+  <div class="terms-wrapper">
+    <div class="terms-label">Categories:</div>
+    <ul class="terms-list">
+        <li class="terms-item"><a href="/categories/engineering/">Engineering</a></li>
+        <li class="terms-item"><a href="/categories/prototype/">Prototype</a></li>
+    </ul>
+  </div>
+
+      
+      
+      <span class="post-meta-separator">•</span>
+      
+  <div class="terms-wrapper">
+    <div class="terms-label">Tags:</div>
+    <ul class="terms-list">
+        <li class="terms-item"><a href="/tags/conceptual-design/">Conceptual Design</a></li>
+        <li class="terms-item"><a href="/tags/prototype-aircraft/">Prototype Aircraft</a></li>
+    </ul>
+  </div>
+
+      
+    </div>
+    
+    <p class="post-summary">Design, build, and fly a humanitarian Unmanned Aerial Vehicle (UAV)</p>
+    
+  </header>
+
+  
+
+  <div class="post-content">
+    <hr>
+<h3 id="introduction">Introduction</h3>
+<p>The task in this course was to build a rugged, low-cost aerial vehicle whose objective is to transport and distribute an <em>Air Drop Box ADB Mini</em> unit, a humanitarian package (see Figure 1). In this post I will provide a brief description of how the original design was modified for the construction of a scaled, electric prototype. I will also discuss a quirky little piece of knowledge from the model aircraft community regarding the actuation linkages of the control surfaces.</p>
+<figure><img src="/projects/prototype-realization/payload.svg"
+    alt="Image from test flight and payload" width="700px"><figcaption>
+      <p>Image from test flight and payload</p>
+    </figcaption>
+</figure>
+
+<h3 id="requirements">Requirements</h3>
+<p>For the modification of the original UAV design, a series of constraints was imposed by the supervising team. They were:</p>
+<ul>
+<li>The use of a specified electric motor;</li>
+<li>Construction methods should be limited to available resources at the university’s workshops and students’ manual labour;</li>
+<li>The project budget should be limited to 2500 SEK (around 240 euros);</li>
+<li>The model has to be hand-launched.</li>
+</ul>
+<p>In addition, the original aircraft must have a short landing. For this, we decided to test a deep stall flight maneuver.</p>
+<h3 id="design">Design</h3>
+<p>The model was scaled with a factor of 3 with respect to the initial theoretical UAV. This was based on the power specifications from the provided motor. Therefore, it was considered better to have excess power and, consequently, a higher thrust-to-weight ratio, which would help with the UAV&rsquo;s launching method.</p>
+<p>Designed around the payload, the structure was made of simple laser cut frames/ribs connected by longerons and stringers, as shown in Figures 2-5. The tail (stabilator) was all-moving to improve the control authority.</p>
+<div style="display: flex;">
+<figure><a href="iso_alb2.PNG"><img src="/projects/prototype-realization/iso_alb2.PNG"
+    alt="CAD model of the airplane." width="200px"></a><figcaption>
+      <p>CAD model of the airplane.</p>
+    </figcaption>
+</figure>
+
+<figure><a href="drawing.png"><img src="/projects/prototype-realization/drawing.png"
+    alt="Isometric drawing" width="200px"></a><figcaption>
+      <p>Isometric drawing</p>
+    </figcaption>
+</figure>
+
+<figure><a href="rendered1.png"><img src="/projects/prototype-realization/rendered1.png"
+    alt="Rendered cut-out" width="200px"></a><figcaption>
+      <p>Rendered cut-out</p>
+    </figcaption>
+</figure>
+
+</div>
+<figure><a href="LaserCutExample.png"><img src="/projects/prototype-realization/LaserCutExample.png"
+    alt="Example of a drawing for the laser cutter." width="500px"></a><figcaption>
+      <p>Example of a drawing for the laser cutter.</p>
+    </figcaption>
+</figure>
+
+<h4 id="mass-prediction">Mass Prediction</h4>
+<p>The mass was estimated by assigning material densities in the CAD model and computing the center of gravity (CG), see Figure 6. It should be noted that the CAD model did not include fasteners, cables, glue, or hinges. With an assumed 20% extra mass to account for all these devices, the predicted mass from CAD became 1.056 kg, which was very close to the measured mass after construction of 1.025 kg. Since the extra weight was uniformly distributed, it did not influence the center of mass position noticeably. The CAD estimation corresponded very well with the real CG location (about 30% of the mean aerodynamic chord (MAC)).</p>
+<figure><a href="cgdraw.png"><img src="/projects/prototype-realization/cgdraw.png"
+    alt="Center of gravity check." width="700px"></a><figcaption>
+      <p>Center of gravity check.</p>
+    </figcaption>
+</figure>
+
+<p>Because the new electric engine was lighter compared with the initially planned combustion engine, the center of gravity shifted backwards considerably. One of the solutions to compensate for this issue was to move the wing assembly backwards. However, the tail volume coefficients were not checked, which resulted in an lateral unstable airplane (issues notes during test flights).</p>
+<h4 id="release-mechanism">Release Mechanism</h4>
+<p>To release the payload, two supporting brackets actuated by a servo would rotate to let the box fall under gravity, as shown in the video and figure below.</p>
+<p><div style="display: flex; justify-content: center;">
+  <video controls preload="auto" width="69.6%"  playsinline class="html-video">
+      <source src="/projects/prototype-realization/release_mechanism.mp4" type="video/mp4">
+    <span>Your browser doesn't support embedded videos, but don't worry, you can <a href="/projects/prototype-realization/release_mechanism.mp4">download it</a> and watch it with your favorite video player!</span>
+  </video>
+  </div>
+<br>
+<div style="display: flex; justify-content: center;">
+  <video controls preload="auto" width="69.6%"  playsinline class="html-video">
+      <source src="/projects/prototype-realization/2024-10-19_19-42-27.mp4" type="video/mp4">
+    <span>Your browser doesn't support embedded videos, but don't worry, you can <a href="/projects/prototype-realization/2024-10-19_19-42-27.mp4">download it</a> and watch it with your favorite video player!</span>
+  </video>
+  </div></p>
+<figure><a href="releasemech.png"><img src="/projects/prototype-realization/releasemech.png"
+    alt="Release mechanism." width="500px"></a><figcaption>
+      <p>Release mechanism.</p>
+    </figcaption>
+</figure>
+
+<h4 id="servo-4-bar-linkage">Servo 4-bar linkage</h4>
+<p>In general, to use the full power and resolution of the servos, one should allow their arms to move all the way up to the built-in endpoints. Usually, that is between -45 and +45 degrees. In contrast, an aileron might only need 15 deg deflection. This reduction is achieved by a reduction system, which consists of lever arms of different lengths (as illustrated in Figures 7 and 8). These, in turn, have a problem: the positive and negative deflections of the ailerons are not equal, which leads to different drag forces on the left and right sides (undesired yaw moment). To minimize this problem, a rule of thumb must be kept:</p>
+<ul>
+<li>In the neutral position, the crank  \(r_1\) and rocker \(r_2\) must be parallel and have an angle of 90 degrees with the coupler \(L\).</li>
+</ul>
+<p><figure><img src="/projects/prototype-realization/drarm.jpg"
+    alt="Usual aileron command mechanism. Image taken from [1]." width="500px"><figcaption>
+      <p>Usual aileron command mechanism. Image taken from [1].</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/projects/prototype-realization/angles2.png"
+    alt="Four-bar linkage. The angle \(\delta\) is the input, then angle \(X\) is the output." width="400px"><figcaption>
+      <p>Four-bar linkage. The angle \(\delta\) is the input, then angle \(X\) is the output.</p>
+    </figcaption>
+</figure>
+</p>
+<p>The resultant response for a given deflection of the servo may be computed by solving a non-linear equation for each given angle. Using the notations in Figure 9 and assuming a Cartesian system in \(O\), we write the coordinates of points \(A\) and \(B\):
+\begin{equation}
+\begin{aligned}
+x_A &amp;= -r_1\cos{\left( \alpha+\delta \right)}   &amp;  x_B &amp;= D-r_2\cos{\left(\alpha+X\right)}   \\
+y_A &amp;=r_1\sin{\left(\alpha+\delta\right)}   &amp;  y_B &amp;= r_2\sin{\left(\alpha+X\right)}
+\end{aligned}
+\end{equation}
+Knowing that the coupler \(L\) does not change lenth, it means that the distance AB is a constant. Therefore,
+\begin{equation}
+L= \sqrt{ \left(D-r_2\cos{\left(\alpha+X\right)}+r_1\cos{\left( \alpha+\delta \right)}\right)^2 + \left(r_2\sin{\left(\alpha+X\right)}-r_1\sin{\left(\alpha+\delta\right)} \right)^2}
+\end{equation}
+Equation 2 can be numerically solved for \(X\), given \(\delta\). The rest of the parameters are given from a certain geometry.</p>
+<p>Two cases were investigated. One of them is the parallelogram configuration in which the response is the same as the deflection angle. The other case was when different lever arm lengths were used, and the neutral position was tilted such that the rule of thumb was applied. In Figure 10 we see that the response for the tilted case is not a linear function of the input. Furthermore, it is not perfectly symmetric about the 0 position, especially at high angles, as shown in Figure 11. However, due to the fact that the servo travel is limited to 45 deg, the error between the two sides could be neglected. So, if the rule of thumb is applied, from an engineering point of view the response can be considered linear and symmetric, although mathematically it is not.</p>
+<figure><img src="/projects/prototype-realization/fig2inlvspp.png"
+    alt="Command and response for aileron example." width="450px"><figcaption>
+      <p>Command and response for aileron example.</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/projects/prototype-realization/error.png"
+    alt="Error between positive and negative displacements (measure of asymmetry)." width="450px"><figcaption>
+      <p>Error between positive and negative displacements (measure of asymmetry).</p>
+    </figcaption>
+</figure>
+
+<h3 id="flight-test">Flight test</h3>
+<p>The model performance was assessed during the flight test. The first flight attempt failed due to yaw instability issues, caused by a too-small vertical tail area. In order to overcome this problem, the vertical tail was enlarged by adding extra cardboard pieces as observed in Figure 13. Several minor repairs were also performed to correct problems from the impact in the failed attempt. A successful flight was achieved during the second attempt, performing with adequate control and stability (Figure 14). The deep stall characteristics were also tested during flight. Although the aircraft remained controllable during flight, a small rudder surface made this process difficult. Satisfactory release of the payload during flight was accomplished. Nevertheless, the abrupt final landing in deep stall caused new damages to the UAV, including to the release mechanism and the failure of the propeller.</p>
+<p><figure><img src="/projects/prototype-realization/beforetest.png"
+    alt="Before the flight tests." width="500px"><figcaption>
+      <p>Before the flight tests.</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/projects/prototype-realization/aftertest.png"
+    alt="After the flight tests." width="500px"><figcaption>
+      <p>After the flight tests.</p>
+    </figcaption>
+</figure>
+</p>
+<figure><a href="drop1.png"><img src="/projects/prototype-realization/drop1.png"
+    alt="Payload successfully deployed." width="500px"></a><figcaption>
+      <p>Payload successfully deployed.</p>
+    </figcaption>
+</figure>
+
+<br>
+<br>
+
+<details>
+  <summary>Future adjustments</summary>
+  <p>A series of future modifications could be performed for an improved version of the model based on the experience and issues encountered during the prototype realization. The following ideas could be implemented:</p>
+<ul>
+<li>Laser-cut the fuselage stringers, which would ease the manufacturing of the fuselage and would ensure a good alignment.</li>
+<li>Cut the nose at the position of the engine plate for engine access. In this case, tape or even a hinge could be used to keep it attached.</li>
+<li>Improve the alignment of the tail end by using more precise pins for the horizontal tail attachment. This could also be done by creating an alignment slot in the carbon fiber rod and a pin in the tail end (which is 3D printed).</li>
+<li>Reinforcement of the long L-shapes at the ends of the release mechanism where the servo was linked. This should be done to avoid components&rsquo; damage due to abrupt mechanism movements.</li>
+<li>The release mechanism should be better adjusted in the fully retracted position to avoid any damage during landing.</li>
+<li>The front and the fuselage ribs need a better design or reinforcement. When landing, these two ribs make contact with the ground first, so they are critical.</li>
+<li>Make 1 mm deep slots in the fuselage ribs under the fuselage plate for the cables.</li>
+<li>The wing attachment could be modified if new longitudinal fuselage ribs are added. The plate could be removed and the wing carbon fiber rods directly passed through holes made in the fuselage ribs. This would save weight and create more space for cables.</li>
+<li>The ailerons could be improved by switching from Depron foam to plywood and balsa materials. Moreover, the ribs could be laser-cut with a more suitable design.</li>
+<li>The stability margins should be recomputed using the current configuration with the increased tail area. Moreover, the rudder size should be increased.</li>
+<li>A detailed calculation should be performed for each mechanism in the aircraft to optimize their functionality.</li>
+</ul>
+</details>
+
+<h3 id="conclusions">Conclusions</h3>
+<p>A simple UAV prototype was successfully built and tested. Furthermore, the UAV had satisfactory flight performance and control. The objectives of developing a simple and cheap UAV capable of dropping a payload were successfully achieved. It was also proved that the deep-stall landing was feasible, but an additional landing device such as a net is needed to prevent any damage.</p>
+<p>A positive outcome of the process, which should be mentioned, was the involvement of the students with multiple manufacturing methods and techniques, which, in many cases, had to be manually performed by the group members. The ability to solve problems as they occurred was a key element of the whole process and an invaluable lesson that we learned throughout this short period.</p>
+<hr>
+<p>This project was completed in a team of 3, and was the continuation of the Aircraft Conceptual Design project course in which the conceptual design for a humanitarian UAV was developed.</p>
+<hr>
+<h3 id="references">References</h3>
+<p>[1] Model Flying Forum. <a href="https://forums.modelflying.co.uk/index.php?/topic/27629-how-to-mount-servos-in-veneered-foam-wings/">https://forums.modelflying.co.uk/index.php?/topic/27629-how-to-mount-servos-in-veneered-foam-wings/</a></p>
+
+  </div>
+
+  
+</article>
+
+
+  </main>
+  <footer class="site-footer">
+    <p align="center" class="copyright">Adrian&#39;s Website © 2026. All rights reserved.</p>
+
+  </footer>
+  
+
+</body>
+</html>

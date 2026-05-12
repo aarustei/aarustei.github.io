@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Model Aircraft CFD Analysis | Adrian&#39;s Website</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+  rel="stylesheet">
+
+
+
+<style>
+  :root {
+    --accent-color: #47b1db;
+  }
+  
+  [data-theme="dark"] {
+    --accent-color: #5fc9f0;
+  }
+  
+</style>
+
+
+
+
+
+      <script src="/js/main.js"></script>
+
+
+  
+  
+    <script>
+window.MathJax = {
+  tex: {
+	
+    tags: "ams",               
+    displayMath: [['\\[','\\]'], ['$$','$$']], 
+    inlineMath: [['\\(','\\)']],
+	processEscapes: true,      
+    processEnvironments: true, 
+    processRefs: true,         
+    
+                               
+    
+    
+    
+    
+    
+  },
+  loader: { load: ['ui/safe'] }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body class="site-wrapper">
+  <header>
+    <div class="header-wrapper">
+    <nav class="navbar" role="navigation">
+        
+        <div class="navbar-brand">
+            <a href="/">Adrian&#39;s Website</a>
+        </div>
+
+        
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        
+        <div class="navbar-menu" id="navbar-menu">
+            <div class="navbar-nav">
+               
+               
+                
+                    <a href="/about/" class="nav-link ">
+                        About
+                    </a>
+                 
+                    <a href="/publications/" class="nav-link ">
+                        Publications
+                    </a>
+                 
+                    <a href="/projects/" class="nav-link ">
+                        Projects
+                    </a>
+                 
+                    <a href="/posts/" class="nav-link ">
+                        Posts
+                    </a>
+                 
+                    <a href="/tags/" class="nav-link ">
+                        Tags
+                    </a>
+                 
+                    <a href="/files/cv_adrian_arustei.pdf" class="nav-link btn-solid">
+                        Get my CV
+                    </a>
+                
+             
+            </div>
+
+            <div class="navbar-actions">
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  </header>
+  <main class="site-main">
+    
+
+
+
+
+<article class="post-article">
+  <header class="post-header">
+    <h1 class="post-title">Model Aircraft CFD Analysis</h1>
+    <div class="post-meta">
+      <time datetime="2019-01-18T00:00:00&#43;00:00">January 18, 2019</time>
+      <span class="post-meta-separator">•</span>
+      <span>7 min read</span>
+      
+      <span class="post-meta-separator">•</span>
+      
+  <div class="terms-wrapper">
+    <div class="terms-label">Categories:</div>
+    <ul class="terms-list">
+        <li class="terms-item"><a href="/categories/engineering/">Engineering</a></li>
+        <li class="terms-item"><a href="/categories/cfd/">CFD</a></li>
+    </ul>
+  </div>
+
+      
+      
+      <span class="post-meta-separator">•</span>
+      
+  <div class="terms-wrapper">
+    <div class="terms-label">Tags:</div>
+    <ul class="terms-list">
+        <li class="terms-item"><a href="/tags/aerodynamics/">Aerodynamics</a></li>
+        <li class="terms-item"><a href="/tags/cfd/">CFD</a></li>
+        <li class="terms-item"><a href="/tags/model-aircraft/">Model Aircraft</a></li>
+    </ul>
+  </div>
+
+      
+    </div>
+    
+    <p class="post-summary">Stability and performance analysis of an aircraft using computational fluid dynamics (CFD)</p>
+    
+  </header>
+
+  
+
+  <div class="post-content">
+    <hr>
+<h3 id="introduction">Introduction</h3>
+<p>In a previous project [], a humanitarian aid UAV was designed and built to deliver a box with supplies at a target point. This project is based on this aircraft, which is an interesting case study. On the test day, a few seconds after the first launch, the aircraft entered a flat spin and crashed. This project tries to elucidate what caused this behavior using CFD simulations on the model. A secondary purpose is related to the use of CFD in conceptual design. As such, we will try to answer three questions:</p>
+<ul>
+<li>How much does a cargo door improve performance?</li>
+<li>What does CFD predict about the aircraft&rsquo;s static stability?</li>
+<li>How much should the vertical tail be enlarged to make the airplane stable?</li>
+</ul>
+<figure><img src="/projects/aircraft-stability-analysis-cfd/payload.svg"
+    alt="Image from test flight and payload" width="900px">
+</figure>
+
+<h3 id="geometry-preparation">Geometry Preparation</h3>
+<p>First, the geometry from the CAD had to be adapted for CFD simulations. This meant that all small details and edges were removed, leaving only the main features (see Figures 1 and 2). Of course, this step introduces another set of uncertainties. Once the CAD geometry was ready, Boolean operations (in ANSYS DesignModeler) were taken to obtain the simulation domain after rotations were applied around the predicted center of gravity from CAD. In this way the angle of attack and sideslip angle could be easily varied as parameters in Workbench. The rectangular domain can be seen in Figure 4. The conceptual design test cases are shown in Figure 5.</p>
+<figure><img src="/projects/aircraft-stability-analysis-cfd/geomd.png"
+    alt="CAD geometry." width="500px"><figcaption>
+      <p>CAD geometry.</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/projects/aircraft-stability-analysis-cfd/geomc.png"
+    alt="All the unnecessary details were removed." width="500px"><figcaption>
+      <p>All the unnecessary details removed for CFD simulations.</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/projects/aircraft-stability-analysis-cfd/DomainSize.PNG"
+    alt="Computational domain" width="700px"><figcaption>
+      <p>Flow domain with a body of in uence around and downstream the model. The sizes are, in body lengths, 8 in height, 14 in width, 8 upstream and 20 downstream of aircraft.</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/projects/aircraft-stability-analysis-cfd/descas.png"
+    alt="Design cases to study: without box, with box, with doors (perfectly closed)." width="900px"><figcaption>
+      <p>Design cases: without box, with box, with doors (perfectly closed).</p>
+    </figcaption>
+</figure>
+
+<br>
+<br>
+
+<details>
+  <summary>Solver setup details</summary>
+  <p>Regarding the solver setup, the turbulence model used was Spalart-Allmaras (SA). The choice was made because, being a one-equation model, it performs slightly faster than k-omega, for example. Robustness and time efficiency had to be kept in mind since the cell count was high (5 million) and the available computational power was limited. The SA model is a low-Reynolds number model and is expected to give the best results when the boundary layer is solved all the way to the wall, i.e., when \(y+\approx1\). However, in our case, a \(y+\) value of 1 was not possible to achieve due to computational limitations. Another way to reduce the wall \(y+\) is to decrease the flow velocity. The velocity chosen for this study is 14 m/s, which is close to the expected stall velocity. A plausible flying condition was wanted to be simulated so the velocity was not reduced further. In Fluent, the SA model was made insensitive to \(y+\) values through the use of enhanced wall functions, such that it works on coarser meshes too.</p>
+<p>The boundary conditions were symmetry on the sides of the domain, inlet velocity and pressure outlet, and no-slip wall on the model. These conditions mimic the flight in a free airstream with a fixed velocity, far away from any obstacles. The domain has to be large enough such that the boundary effect is negligible. For example, the flow might be artificially accelerated due to the blockage effect if the domain cross-sectional area is too small.</p>
+<p>The numerical schemes were second-order for the pressure equation for improved accuracy. No checkerboard patterns were observed in the solutions. The momentum and turbulence equations were discretized with a first-order scheme to avoid oscillations in the interest variables (lift, drag, and moments). The pressure-velocity scheme used was set to coupled.</p>
+<p>The convergence criteria was set to \(10^{-5}\) for the un-normalized scaled residuals. By the time the residuals dropped to this value, it was observed that the integrated quantities like lift and drag are well converged. This usually happened in around 70 iterations, so a limit of 150 iterations was set, although never reached. All simulations had a similar behavior regarding the residuals. With the first-order schemes used, no convergence problems were encountered. Higher-order schemes sometimes did not completely converge due to the flow instability at such high angles of attack (almost near stall), so they were not used.</p>
+</details>
+
+<h3 id="with-propeller-or-not">With Propeller or not?</h3>
+<p>The propeller must have had a significant role in the stability of the aircraft, so it has to be included in the simulations. There are four main ways to simulate a rotating propeller in Ansys Fluent:</p>
+<ul>
+<li>3D Fan Zones have the advantage that the propeller geometry is not needed. However, a pressure jump or a fan curve must be provided;</li>
+<li>Moving Reference Frames (also known as the &ldquo;frozen rotor approach&rdquo;) is a steady-state approximation that solves the moving reference frame equations in the cell zones with a specified rotational velocity. Note that here the mesh does not move;</li>
+<li>Mixing Plane Model is similar to Moving Reference Frames, but it overcomes some of its limitations, for example, in turbomachinery applications. The main difference is how the variables are treated at the interface;</li>
+<li>Sliding Mesh Model is necessarily unsteady due to the motion of the mesh with time.</li>
+</ul>
+<p>The approach chosen is the Moving Reference Frame (MRF), which is easy to implement. A two-blade 12x4 propeller model (similar to the real one) was subtracted from a cylinder domain, the cell zone in which the moving reference frame equations will be solved (Figure 5). This cylinder follows the body rotations together with the aircraft. Being set as a single &ldquo;part&rdquo; in DesignModeler with the whole domain, the mesh is conformal, i.e., nodes at the interface between the two cell zones coincide. The rotational velocity was set to 672 rad/s (around 6417 rpm), a value that gives enough thrust to overcome the drag. The actual motor had a rotational velocity between 6000 and 9000 rpm depending on the propeller and voltage supplied, so our determined value seems plausible.</p>
+<figure><img src="/projects/aircraft-stability-analysis-cfd/Mesh.png"
+    alt="Example mesh" width="600px"><figcaption>
+      <p>Meshed surfaces. Notice that the propeller is inside a moving reference region.</p>
+    </figcaption>
+</figure>
+
+<h3 id="results">Results</h3>
+<h4 id="performance-in-different-configurations">Performance in different configurations</h4>
+<p>In Figure 7, a contour plot of velocities in the 3 design cases can be seen. When adding the box, the gap in the fuselage is filled, and the main vortex is blocked so the drag is reduced. There is still a flow around the box, so drag could be reduced even more by sealing the fuselage with the help of a cargo door. From Figure 8 we see that the best lift/drag improvement is around 21 m/s, which corresponds to a 0 angle of attack (the wing is offset from the fuselage and cambered so it is still producing lift).</p>
+<figure><img src="/projects/aircraft-stability-analysis-cfd/VelStreamline3.png"
+    alt="Comparison of velocity streamlines" width="600px"><figcaption>
+      <p>Veloctity contour plots and streamlines for the three design cases. The box and doors block the recirculation inside the fuselage thus decreasing the drag.</p>
+    </figcaption>
+</figure>
+
+<figure><img src="/projects/aircraft-stability-analysis-cfd/desg.svg"
+    alt="Lift over drag improvements" width="500px"><figcaption>
+      <p>Lift/Drag improvement with respect to the airplane without box. At 21 m/s the L/D gain is the largest from the 3 cases tested.</p>
+    </figcaption>
+</figure>
+
+<h4 id="lateral-directional-stability">Lateral-directional stability</h4>
+<p>A statically stable aircraft will tend to return to its equilibrium position when disturbed. As summarized in Ref. [2], there are three main conditions for a statically stable aircraft:</p>
+<ul>
+<li>Longitudinal: the slope of the pitch moment versus angle of attack to be
+negative, i.e. \(C_{m_\alpha} < 0\);</li>
+<li>Directional: the slope of the yaw moment versus sideslip angle to be positive,
+i.e., \(C_{b_\beta} > 0\);</li>
+<li>Lateral: the slope of the rolling moment versus sideslip angle to be negative,
+i.e., \(C_{l_\beta} < 0\);
+We will take a look at the directional condition in particular.</li>
+</ul>
+<p>The propeller has a destabilizing effect, and the yaw moment slope even becomes slightly negative (see the green curve in Figure 9) when it should be positive for a stable aircraft according to the condition above. The physical explanation is that there is a side force component created at the rotor disc as a result of sideslip. This comes from the fact that the incoming air is deflected sideways by the propeller, and since the propeller is in front of the center of gravity, it creates a moment that tends to rotate the airplane even more. An indirect effect is that the vertical stabilizer feels mainly the &ldquo;propwash&rdquo; and not the change in the sideslip angle, so its ability to produce a restoring yaw moment is diminished. This is why an increase in area of 1.4 is less effective with the propeller present than without.</p>
+<figure><img src="/projects/aircraft-stability-analysis-cfd/yawmom4.svg"
+    alt="Yawing moment with respect to sideslip angle" width="600px"><figcaption>
+      <p>Yawing moment with respect to sideslip angle. By inspecting the slopes of the curves, we see that the propeller is heavily destabilizing.</p>
+    </figcaption>
+</figure>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>To conclude, we can say that the L/D ratio can be improved by 10% on average by adding a cargo door. The Moving Reference Frames model was enough to prove where the main directional instability came from (the propeller). The tail area increase should be done more vertically than horizontally for two reasons: to escape the propeller downwash and to not reduce the tail arm. An increase in tail area by a factor of 1.6 solves the instability problem.</p>
+<hr>
+<h3 id="references">References</h3>
+<ol>
+<li>ADB Systems, <a href="https://airdropbox.co.uk/products/">https://airdropbox.co.uk/products/</a></li>
+</ol>
+
+  </div>
+
+  
+</article>
+
+
+  </main>
+  <footer class="site-footer">
+    <p align="center" class="copyright">Adrian&#39;s Website © 2026. All rights reserved.</p>
+
+  </footer>
+  
+
+</body>
+</html>

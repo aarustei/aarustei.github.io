@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Inverted Pendulum on a Cart | Adrian&#39;s Website</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+  rel="stylesheet">
+
+
+
+<style>
+  :root {
+    --accent-color: #47b1db;
+  }
+  
+  [data-theme="dark"] {
+    --accent-color: #5fc9f0;
+  }
+  
+</style>
+
+
+
+
+
+      <script src="/js/main.js"></script>
+
+
+  
+  
+    <script>
+window.MathJax = {
+  tex: {
+	
+    tags: "ams",               
+    displayMath: [['\\[','\\]'], ['$$','$$']], 
+    inlineMath: [['\\(','\\)']],
+	processEscapes: true,      
+    processEnvironments: true, 
+    processRefs: true,         
+    
+                               
+    
+    
+    
+    
+    
+  },
+  loader: { load: ['ui/safe'] }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body class="site-wrapper">
+  <header>
+    <div class="header-wrapper">
+    <nav class="navbar" role="navigation">
+        
+        <div class="navbar-brand">
+            <a href="/">Adrian&#39;s Website</a>
+        </div>
+
+        
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        
+        <div class="navbar-menu" id="navbar-menu">
+            <div class="navbar-nav">
+               
+               
+                
+                    <a href="/about/" class="nav-link ">
+                        About
+                    </a>
+                 
+                    <a href="/publications/" class="nav-link ">
+                        Publications
+                    </a>
+                 
+                    <a href="/projects/" class="nav-link ">
+                        Projects
+                    </a>
+                 
+                    <a href="/posts/" class="nav-link ">
+                        Posts
+                    </a>
+                 
+                    <a href="/tags/" class="nav-link ">
+                        Tags
+                    </a>
+                 
+                    <a href="/files/cv_adrian_arustei.pdf" class="nav-link btn-solid">
+                        Get my CV
+                    </a>
+                
+             
+            </div>
+
+            <div class="navbar-actions">
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  </header>
+  <main class="site-main">
+    
+
+
+
+
+<article class="post-article">
+  <header class="post-header">
+    <h1 class="post-title">Inverted Pendulum on a Cart</h1>
+    <div class="post-meta">
+      <time datetime="2021-12-08T00:00:00&#43;00:00">December 8, 2021</time>
+      <span class="post-meta-separator">•</span>
+      <span>5 min read</span>
+      
+      
+      <span class="post-meta-separator">•</span>
+      
+  <div class="terms-wrapper">
+    <div class="terms-label">Tags:</div>
+    <ul class="terms-list">
+        <li class="terms-item"><a href="/tags/matlab/">MATLAB</a></li>
+        <li class="terms-item"><a href="/tags/control-theory/">Control Theory</a></li>
+        <li class="terms-item"><a href="/tags/linear-systems/">Linear Systems</a></li>
+    </ul>
+  </div>
+
+      
+    </div>
+    
+    <p class="post-summary">Design of a feedback loop for the stabilization of an inverted pendulum on a cart</p>
+    
+  </header>
+
+  
+
+  <div class="post-content">
+    <hr>
+<h3 id="project-goal">Project Goal</h3>
+<p>The objective of this project is to design a state feedback controller of the form \( u(t) = -K x(t) + f r(t) \) in order to balance an inverted pendulum while tracking the reference cart position within the given constraints. A schematic of the system is shown in Figure 1.</p>
+<figure class="wide-caption"><img src="/projects/inverted-pendulum/Cart-pendulum.svg"
+    alt="A pendulum is mounted on a cart which is able to move horizontally." width="250px"><figcaption>
+      <p>Schematic of the cart pendulum. Image from Wiki [1].</p>
+    </figcaption>
+</figure>
+
+<h3 id="model-and-assumptions">Model and Assumptions</h3>
+<p>The linearized dynamics of the inverted pendulum take the form of a linear time-invariant system
+\begin{equation}
+\label{eq:linsyst}
+\begin{aligned}
+\dot{x}(t) &amp;= A x(t) + B u(t) \\
+y(t) &amp;= C x(t) + D u(t)
+\end{aligned}
+\end{equation}</p>
+<p>where the state variables \( x(t) = [x_c(t)\; \alpha(t)\; \dot{x}_c(t)\; \dot{\alpha}(t) ]\) are comprised by the cart&rsquo;s position, angle, horizontal velocity, and angular rate, respectively. The input \( u(t) \) is the motor voltage of the cart, our control variable. The system matrices are given. Only the position and angle are measured. However, all states are assumed to be available for the feedback law.</p>
+<h3 id="controller-design">Controller Design</h3>
+<p>The matrices \(K\) and \( f \) are calculated using the pole placement method. That is, a desired characteristic equation for the closed-loop system has to be specified. The system is a 4th order one, so the characteristic polynomial will have 4 roots. However, the usual formulas for transient characteristics (settling time, rise time, etc.) are only valid for second-order systems. In this case, if the 4th order system has a pair of dominant poles and two poles far in the left side of the complex plane, then the system will behave approximately as a second-order system. This is known as the dominant pole approximation.</p>
+<p>We have chosen the desired percentage overshoot to be \(PO_d = 1\%\) and the desired settling time \( {T_s}_d = 2.4 s\). From these two values, the damping ratio and natural frequency can be calculated as follows:
+\begin{align}
+\zeta &amp;= \frac{-\ln \frac{P O_d}{100}}{\sqrt{\pi^2+\left(\ln \frac{P O_d}{100}\right)^2}}=\frac{-\ln 0.01}{\sqrt{\pi^2+(\ln 0.01)^2}}=0.8261 \\
+\omega_n &amp;= \frac{-\ln \left(0.02 \sqrt{1-\zeta^2}\right)}{\zeta T_{s_d}} =\frac{-\ln \left(0.02 \sqrt{1-0.82^2}\right)}{0.82 \times 2.4}=2.2624 \\
+\sigma_d &amp;= \omega_n \zeta=1.8690 \\
+\omega_d &amp;= \omega_n \sqrt{1-\zeta^2}=1.2750
+\end{align}</p>
+<p>Then, the characteristic equation can be built. If we choose the other two poles to be located at 6 and 8 times the real part of the dominant poles, then the desired characteristic equation becomes
+\begin{equation}
+\Delta_d(s)=\left(s+\sigma_d-j \omega_d\right)\left(s+\sigma_d+j \omega_d\right)\left(s+6 \sigma_d\right)\left(s+8 \sigma_d\right) ,.
+\end{equation}</p>
+<p>In Matlab one can use the command <code>K = place(A,B,[desired_poles])</code> to calculate the matrix \(K\) such that the closed-loop poles of \(A_{cl}=A-BK\) are in the desired location. This yields the following values for \(K\) and \(f\):
+\begin{equation}
+\begin{aligned}
+&amp; K=\left[\begin{array}{llll}
+-16.67 &amp; 64.57 &amp; -21.80 &amp; 12.11
+\end{array}\right] \\
+&amp; f=-\left(C_1 A_{c l}^{-1} B\right)^{-1}=-16.67
+\end{aligned}
+\end{equation}
+Note that the gain \(f\) is a scalar that multiplies a single reference input \(r(t)\). Therefore \(C_1\) is the first row of matrix \(C\) which corresponds to the desired output to be tracked (in this case the cart position, \(x_c\), which is the first state variable). A block diagram of the closed-loop system is shown in Figure 2.</p>
+<figure><img src="/projects/inverted-pendulum/1639027265756.jpg"
+    alt="Block diagram of the closed-loop system." width="600px"><figcaption>
+      <p>Block diagram of the closed-loop system.</p>
+    </figcaption>
+</figure>
+
+<h3 id="simulation-results">Simulation Results</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Transient characteristic</th>
+          <th style="text-align: center">Simulink model</th>
+          <th style="text-align: center">Simulated model</th>
+          <th style="text-align: center">Constraint</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Settling time</td>
+          <td style="text-align: center">1.93 s</td>
+          <td style="text-align: center">1.79 s</td>
+          <td style="text-align: center">≤ 3 s</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Percentage Overshoot</td>
+          <td style="text-align: center">0 %</td>
+          <td style="text-align: center">1.18 %</td>
+          <td style="text-align: center">≤ 2.4 %</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Steady state-error</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">= 0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Maximum pendulum angle</td>
+          <td style="text-align: center">0.91 deg</td>
+          <td style="text-align: center">0.89 deg</td>
+          <td style="text-align: center">≤ 1 deg</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Maximum motor voltage</td>
+          <td style="text-align: center">1.00 V</td>
+          <td style="text-align: center">1.00 V</td>
+          <td style="text-align: center">≤ 10 V</td>
+      </tr>
+  </tbody>
+</table>
+<p>Table 1: Transient response characteristics for a step input in the reference position. All constraints are met.</p>
+
+<details>
+  <summary>Simulation figures</summary>
+  <p>In Figure 3 is presented the cart position for a step input of 60 mm. The Simulink model has a slightly different response due to how the observer calculates the full state using the derivatives of the angle and position, while in the simulated model all the states were available at the output. In Figure 4 the control law (motor voltage) is plotted versus time. In Figure 5 the pendulum angle is shown for the step input response.</p>
+<figure><img src="/projects/inverted-pendulum/simulation.png"
+    alt="Step input response comparison between the simulated model and provided simulink model." width="400px"><figcaption>
+      <p>Step input response comparison between the simulated model and provided Simulink model.</p>
+    </figcaption>
+</figure>
+<figure><img src="/projects/inverted-pendulum/vm.png"
+    alt="Motor voltage u(t) for the step input response obtained from the Simulink model." width="400px"><figcaption>
+      <p>Motor voltage u(t) for the step input response obtained from the Simulink model.</p>
+    </figcaption>
+</figure>
+<figure><img src="/projects/inverted-pendulum/alfa.png"
+    alt="Pendulum angle \(\alpha(t)\) for the step input response obtained from the simulink model." width="400px"><figcaption>
+      <p>Pendulum angle \(\alpha(t)\) for the step input response obtained from the simulink model.</p>
+    </figcaption>
+</figure>
+</details>
+
+<div style="counter-reset: figure-counter 5;"> <!-- Begin of figoffset. Where # is the total number of images above, including the details sections -->
+<h3 id="experimental-results">Experimental Results</h3>
+<p>The experimental setup (as shown in Figure 6 or setup manual [2]) was able to stabilize the pendulum with the provided control law (Figure 7). However, the cart position presented large overshoots and steady-state errors. Those come from the unmodeled dynamics like cable friction, electric motor dynamics, system nonlinearities, wind gust disturbances (from the experimenters moving in the room), and so on. An integral term might be needed in the control law to drive the steady-state errors to zero.</p>
+<figure><img src="/projects/inverted-pendulum/20211208_153013.jpg"
+    alt="Experimental setup of the inverted pendulum" width="500px"><figcaption>
+      <p>Experimental setup of the inverted pendulum.</p>
+    </figcaption>
+</figure>
+
+<figure class="wide-caption"><img src="/projects/inverted-pendulum/20211208_153031c.jpg"
+    alt="Experimental results plot." width="500px"><figcaption>
+      <p>Experimental results. Cart position (top), pendulum angle (bottom). On the top figure, the yellow line is reference signal, the cyan line is the linear model response and the magenta color is the experimental data. On the bottom figure, the yellow line is experimental data and magenta is the linear model.</p>
+    </figcaption>
+</figure>
+
+<p>It can be noticed that even though the cart position has large overshoots, the pendulum angle is kept within small bounds.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>A full state feedback law was successfully designed and tested to balance an inverted pendulum on a cart while tracking a certain cart position. A simple linearized model was sufficient for the design purpose. The experimental data shows that the pendulum angle has small deviations from the equilibrium position, but the cart has large overshoots compared to the reference signal. These come from the unmodeled dynamics and other disturbances.</p>
+<hr>
+<p>This project was part of the Linear Systems course at WSU and was completed in a team of three. I was responsible for the simulations and controller design shown above. The project also included observability and controllability tests, as well as an observer design, not detailed here.</p>
+<hr>
+<h3 id="references">References</h3>
+<ol>
+<li>
+<p>Inverted pendulum, Wikipedia, <a href="https://en.wikipedia.org/wiki/Inverted_pendulum">https://en.wikipedia.org/wiki/Inverted_pendulum</a></p>
+</li>
+<li>
+<p>J. Apkarian, H. Lacheray, P. Martin, Student Workbook: Linear Pendulum Experiment for LabVIEW Users, Quanser, available at <a href="https://www.made-for-science.com/en/quanser/?df=made-for-science-quanser-linear-servo-base-unit-inverted-pendulum-coursewarestud-labview.pdf">https://www.made-for-science.com/en/quanser/?df=made-for-science-quanser-linear-servo-base-unit-inverted-pendulum-coursewarestud-labview.pdf</a></p>
+</li>
+</ol>
+</div> <!-- End of fig offset -->
+
+  </div>
+
+  
+</article>
+
+
+  </main>
+  <footer class="site-footer">
+    <p align="center" class="copyright">Adrian&#39;s Website © 2026. All rights reserved.</p>
+
+  </footer>
+  
+
+</body>
+</html>
