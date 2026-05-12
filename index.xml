@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Adrian&#39;s Website</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Home on Adrian&#39;s Website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Stall Landing (work in progress)</title>
+      <link>//localhost:1313/posts/deepstall/deepstall/</link>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/deepstall/deepstall/</guid>
+      <description>Deep stall landing</description>
+    </item>
+    <item>
+      <title>Autonomous Robotic Grasping for On-orbit Satellite Repair</title>
+      <link>//localhost:1313/projects/robootic-grasping/</link>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/robootic-grasping/</guid>
+      <description>Path planning and controller design in MATLAB of a robotic arm that for grasping spinning satellites in orbit</description>
+    </item>
+    <item>
+      <title>Inverted Pendulum on a Cart</title>
+      <link>//localhost:1313/projects/inverted-pendulum/</link>
+      <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/inverted-pendulum/</guid>
+      <description>Design of a feedback loop for the stabilization of an inverted pendulum on a cart</description>
+    </item>
+    <item>
+      <title>Model Aircraft CFD Analysis</title>
+      <link>//localhost:1313/projects/aircraft-stability-analysis-cfd/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/aircraft-stability-analysis-cfd/</guid>
+      <description>Stability and performance analysis of an aircraft using computational fluid dynamics (CFD)</description>
+    </item>
+    <item>
+      <title>Prototype Realization</title>
+      <link>//localhost:1313/projects/prototype-realization/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/prototype-realization/</guid>
+      <description>Design, build, and fly a humanitarian Unmanned Aerial Vehicle (UAV)</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;p&gt;During middle school and high school, I used to participate in various mathematics and physics competitions organized at the local level (school- or city-wise). I also used to attend some extracurricular lessons in physics held rotatively by teachers from different schools in my hometown. Whenever a contest&amp;rsquo;s profile was more creative, I scored well and received small awards and even qualified for the contest&amp;rsquo;s national phase. These activities instilled competitiveness in me from a young age. In college I have continued participating in the student contests for strength of materials, mechanics, and mathematics with national-level results. It turned out that all these years were excellent training for what was about to be the biggest challenge of my professional life: completing a PhD.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>//localhost:1313/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publications/</guid>
+      <description>&lt;h2 id=&#34;journal-articles&#34;&gt;Journal Articles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;S. M. T. Zaidi, &lt;strong&gt;A. Arustei&lt;/strong&gt;, A. Munir and A. Dutta, &lt;em&gt;Single-Agent Attention Actor–Critic: A Deep Reinforcement Learning-Based Solution for Low-Thrust Spacecraft Trajectory Optimization&lt;/em&gt;, in IEEE Transactions on Aerospace and Electronic Systems, vol. 61, no. 5, pp. 11628-11643, Oct. 2025, doi: 10.1109/TAES.2025.3569615&lt;/li&gt;&#xA;&lt;li&gt;S. M. T. Zaidi, &lt;strong&gt;A. Arustei&lt;/strong&gt;, A. Munir and A. Dutta, &lt;em&gt;Automated Trajectory Planning: A Cascaded Deep Reinforcement Learning Approach for Low-Thrust Spacecraft Orbit-Raising&lt;/em&gt;, IEEE Aerospace and Electronic Systems Magazine, Jan 2025. doi: 10.1109/MAES.2025.3556795.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;A. Arustei&lt;/strong&gt;, A. Dutta, &lt;em&gt;Direct Optimization of Low-thrust Orbit-raising Maneuvers Using Adjoint Sensitivities&lt;/em&gt;, Acta Astronautica, Vol. 219, 2024, pp. 965–981, doi: 10.1016/j.actaastro.2024.03.059.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;conference-papers&#34;&gt;Conference Papers&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;J. Steck, &lt;strong&gt;A. Arustei&lt;/strong&gt;, A. Dutta. &lt;em&gt;Low Thrust Minimum Time Transfer: Reinforcement Learning of Optimal Co-State Time Dependance&lt;/em&gt;, AIAA 2026-2782, AIAA SCITECH 2026 Forum, January 2026. (in press)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;A. Arustei&lt;/strong&gt;, A. Dutta, &lt;em&gt;Nested B-spline Control and Modified (h,e) Elements for Lengthy Low-thrust Cislunar Orbit-raising&lt;/em&gt;, in: AAS/AIAA Astrodynamics Specialist Conference, Boston, Massachusetts, USA, 2025, AAS 25-874.&lt;/li&gt;&#xA;&lt;li&gt;J. Steck, &lt;strong&gt;A. Arustei&lt;/strong&gt;, A. Dutta, &lt;em&gt;Low Thrust Minimum Time Transfer: Single Network Adaptive Critic Approximate Dynamic Programming&lt;/em&gt;, 2025 AAS/AIAA Space Flight Mechanics Meeting, AAS 2025-311. (in press)&lt;/li&gt;&#xA;&lt;li&gt;A. Dutta, &lt;strong&gt;A. Arustei&lt;/strong&gt;, M. Chace, P. Chadalavada, J. Steck, T. Zaidi, A. Munir, &lt;em&gt;Machine Learning Assisted Low-Thrust Orbit-Raising: A Comparative Assessment of a Sequential Algorithm and Deep Reinforcement Learning Approach&lt;/em&gt;, AIAA SCITECH 2024 Forum, Jan 2024, doi: 10.2514/6.2024-1669.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;A. Arustei&lt;/strong&gt;, A. Dutta, &lt;em&gt;An adjoint sensitivity method for the sequential low-thrust orbit raising problem&lt;/em&gt;, in: AAS/AIAA Astrodynamics Specialist Conference, Charlotte, North Carolina, USA, 2022, AAS 22-835.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;thesesdissertations&#34;&gt;Theses/Dissertations&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;A. Arustei&lt;/strong&gt;, &lt;em&gt;Development of a System Identification Tool for Subscale Flight Testing&lt;/em&gt;, Linköping University, Master&amp;rsquo;s Thesis, 2019, DiVA id: diva2:1324418.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
