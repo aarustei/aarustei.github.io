@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Symbolic Regression on Adrian&#39;s Website</title>
+    <link>//localhost:1313/tags/symbolic-regression/</link>
+    <description>Recent content in Symbolic Regression on Adrian&#39;s Website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/symbolic-regression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Symbolic Regression for a Non-elementary Integral</title>
+      <link>//localhost:1313/posts/symbregression/</link>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/symbregression/</guid>
+      <description>Closed-form approximations can be discovered for integrals without solutions in terms of elementary functions through symbolic regression</description>
+    </item>
+  </channel>
+</rss>

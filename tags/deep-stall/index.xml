@@ -10,9 +10,9 @@
     <atom:link href="//localhost:1313/tags/deep-stall/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deep Stall Landing (work in progress)</title>
-      <link>//localhost:1313/posts/deepstall/deepstall/</link>
+      <link>//localhost:1313/posts/deepstall/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/deepstall/deepstall/</guid>
+      <guid>//localhost:1313/posts/deepstall/</guid>
       <description>Deep stall landing</description>
     </item>
   </channel>

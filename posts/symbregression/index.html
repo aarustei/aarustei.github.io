@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Symbolic Regression for a Non-elementary Integral | Adrian&#39;s Website</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+  rel="stylesheet">
+
+
+
+<style>
+  :root {
+    --accent-color: #47b1db;
+  }
+  
+  [data-theme="dark"] {
+    --accent-color: #5fc9f0;
+  }
+  
+</style>
+
+
+
+
+
+      <script src="/js/main.js"></script>
+
+
+  
+  
+    <script>
+window.MathJax = {
+  tex: {
+	
+    tags: "ams",               
+    displayMath: [['\\[','\\]'], ['$$','$$']], 
+    inlineMath: [['\\(','\\)']],
+	processEscapes: true,      
+    processEnvironments: true, 
+    processRefs: true,         
+    
+                               
+    
+    
+    
+    
+    
+  },
+  loader: { load: ['ui/safe'] }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body class="site-wrapper">
+  <header>
+    <div class="header-wrapper">
+    <nav class="navbar" role="navigation">
+        
+        <div class="navbar-brand">
+            <a href="/">Adrian&#39;s Website</a>
+        </div>
+
+        
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        
+        <div class="navbar-menu" id="navbar-menu">
+            <div class="navbar-nav">
+               
+               
+                
+                    <a href="/about/" class="nav-link ">
+                        About
+                    </a>
+                 
+                    <a href="/publications/" class="nav-link ">
+                        Publications
+                    </a>
+                 
+                    <a href="/projects/" class="nav-link ">
+                        Projects
+                    </a>
+                 
+                    <a href="/posts/" class="nav-link ">
+                        Posts
+                    </a>
+                 
+                    <a href="/tags/" class="nav-link ">
+                        Tags
+                    </a>
+                 
+                    <a href="/files/cv_adrian_arustei.pdf" class="nav-link btn-solid">
+                        Get my CV
+                    </a>
+                
+             
+            </div>
+
+            <div class="navbar-actions">
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  </header>
+  <main class="site-main">
+    
+
+
+
+
+<article class="post-article">
+  <header class="post-header">
+    <h1 class="post-title">Symbolic Regression for a Non-elementary Integral</h1>
+    <div class="post-meta">
+      <time datetime="2026-05-27T00:00:00&#43;00:00">May 27, 2026</time>
+      <span class="post-meta-separator">•</span>
+      <span>4 min read</span>
+      
+      
+      <span class="post-meta-separator">•</span>
+      
+  <div class="terms-wrapper">
+    <div class="terms-label">Tags:</div>
+    <ul class="terms-list">
+        <li class="terms-item"><a href="/tags/symbolic-regression/">Symbolic Regression</a></li>
+        <li class="terms-item"><a href="/tags/evolutionary-algorithms/">Evolutionary Algorithms</a></li>
+        <li class="terms-item"><a href="/tags/integrals/">Integrals</a></li>
+        <li class="terms-item"><a href="/tags/optimization/">Optimization</a></li>
+        <li class="terms-item"><a href="/tags/math/">Math</a></li>
+    </ul>
+  </div>
+
+      
+    </div>
+    
+    <p class="post-summary">Closed-form approximations can be discovered for integrals without solutions in terms of elementary functions through symbolic regression</p>
+    
+  </header>
+
+  
+
+  <div class="post-content">
+    <h2 id="what-is-symbolic-regression">What is symbolic regression?</h2>
+<p>Consider the task of predicting the temperature of a cup of tea over time based on a few measurements. Estimating the relationship between a dependent variable and an independent variable is called regression analysis. These types of problems are very common in engineering, statistics, economics, etc. The simplest regression is a linear regression, which answers the following question: what line passes the closest to some given data points? Note how the question already made an assumption, namely that the fitted model is linear, that is, a line. But what if the model structure is unknown and we are free to choose any curve for fitting? How do we choose one? The control theory-related field that studies how to build models from measured inputs and outputs of a system is called system identification. However, if we purposefully seek models with closed-form, simple, mathematical expressions, then we are in the realm of <strong>symbolic regression</strong>, a topic more closely related to computer science.</p>
+<h2 id="the-fresnel-integral">The Fresnel integral</h2>
+<p>Usually appearing in physics, the integral of sine of x squared is called a Fresnel Integral and may have slightly different <a href="https://mathworld.wolfram.com/FresnelIntegrals.html">definitions</a>. Since there is no closed-form solution in terms of elementary functions (such as polynomials, exponentials, logarithms), we will consider the task of <em>approximating</em>
+\begin{equation}
+S(x) := \int_0^x \sin(t^2) dt  \,.
+\end{equation}</p>
+<p>A couple of very clever approximations have been devised by <a href="https://medium.com/@masonprice_50176/non-elementary-integrals-approximating-the-impossible-2a98700bce2d">(Prince, 2022)</a>, of which the formula
+\begin{equation}
+A_1(x) :=  a \cdot \tanh (x)+\frac{1}{2 x} \cdot\left(e^{-x^2}-\cos \left(x^2\right)\right) \approx \int \sin \left(x^2\right) d x
+\end{equation}
+is particularly intriguing due to its low error and simplicity.</p>
+<figure><img src="/posts/symbregression/approx4.png"
+    alt="Approximation of the Fresnel integral with \( A_1(x) \). Here &rsquo;exact&rsquo; means with machine precision." width="500px"><figcaption>
+      <p>Approximation of the Fresnel integral with \( A_1(x) \). Here &rsquo;exact&rsquo; means with machine precision.</p>
+    </figcaption>
+</figure>
+
+<p>The root mean square error of \(A_1(x)\) for an inteval of interest \( -10&lt;x&lt;10 \) is
+\begin{equation}
+\begin{aligned}
+RMSE_1 &amp;= \sqrt{\frac{1}{20}\int_{-10}^{10}\left(S(x) - A_1(x)\right)^2 dx} \\
+&amp;= 0.6083 \,.
+\end{aligned}
+\end{equation}</p>
+<h3 id="can-we-come-up-with-a-better-formula">Can we come up with a better formula?</h3>
+<p>It ought to be emphasized the challenge of searching the discrete space of possible combinations of elementary functions, as well as the continuous space of any constants appearing in a mathematical expression. There is an active area of research proposing all sorts of algorithms (including machine learning) that exploit properties in equations such as symmetries, consistency for units of measurement, and sometimes the ability to generate large amounts of accurate data.</p>
+<p>A common approach is to formalize the construction of a mathematical formula through a binary tree (Figure 2) so that it is easier to manipulate. The idea is that the tree of operations can be made to evolve through various genetic algorithms or other heuristics such that the expression evaluates as close as possible to a given dataset.</p>
+<figure class="wide-caption"><img src="/posts/symbregression/bintree.PNG"
+    alt="Binary tree for the expression \(E = 4\sin(x_1)&#43;\exp(\cos(2))\)." width="200px"><figcaption>
+      <p>Binary tree for the expression \(E = 4\sin(x_1)+\exp(\cos(2))\).</p>
+    </figcaption>
+</figure>
+
+<p>To demonstrate the tehnique we shall employ a very well implemented open-source software called <a href="https://dev.heuristiclab.com/trac.fcgi/">HeuristicLab</a>, specialized in evolutionary algorithms/genetic programmming.</p>
+<h2 id="result">Result</h2>
+<p>A small dataset of \(S(x)\) evaluated on \( -10&lt;x&lt;10 \) has been plugged into the ALPS-GP template for symbolic regression in HeuristicLab. After an experiment with 100 runs, each evolving a population of 500 individuals for 600 generations, the algortihm found the following expression:</p>
+<figure class="wide-caption"><img src="/posts/symbregression/modelHL.PNG"
+    alt="Best model found with ALPS-GP in HeuristicLab." width="400px"><figcaption>
+      <p>Best model found with ALPS-GP in HeuristicLab.</p>
+    </figcaption>
+</figure>
+
+<p>Of course two of the constants can be furuther simplified. After a retuning of parameters, we found a new approximation
+\begin{equation}
+A_2(x) :=  \left(\tanh(c_1 x^3) + \frac{\tanh(c_2 x) \cos(x^2) \tanh(c_3 x^3)}{c_4 x} \right) c_5 \approx \int \sin \left(x^2\right) d x
+\end{equation}
+where the constants have the values \([c_1, c_2, c_3, c_4, c_5] = [0.7120, 1.1521, -0.3298, 1.2428, 0.6277]\). How good is it? Well, the RMSE becomes
+\begin{equation}
+\begin{aligned}
+RMSE_2 &amp;= \sqrt{\frac{1}{20}\int_{-10}^{10}\left(S(x) - A_2(x)\right)^2 dx} \\
+&amp;= 0.0054 \,,
+\end{aligned}
+\end{equation}
+which is two orders of magnitude smaller than the previous one. A plot of the absolute errors of the two approximations is shown in Figure 4.
+<figure class="wide-caption"><img src="/posts/symbregression/errorapp.png"
+    alt="The absolute error of the newly found expression \(A_2\) is considerably lower." width="600px"><figcaption>
+      <p>The absolute error of the newly found expression \(A_2\) is considerably lower.</p>
+    </figcaption>
+</figure>
+</p>
+<h2 id="final-remarks">Final remarks</h2>
+<p>A new approximation for the Fresnel integral has been found with a lower root mean square error and with a small expression length and depth. Genetic programming was the indispensable tool for searching the model space. The world of science really needs transparent, human-readable, interpretable mathematical models!</p>
+
+  </div>
+
+  
+</article>
+
+
+  </main>
+  <footer class="site-footer">
+    <p align="center" class="copyright">Adrian&#39;s Website © 2026. All rights reserved.
+<br>
+  Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> using a modified <a href="https://github.com/yassi/hugo-theme-yassi" target="_blank" rel="noopener">Yassi</a> theme, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+</p>
+
+  </footer>
+  
+
+</body>
+</html>

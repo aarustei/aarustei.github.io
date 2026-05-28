@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Symbolic Regression for a Non-elementary Integral | Adrian&#39;s Website</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+  rel="stylesheet">
+
+
+
+<style>
+  :root {
+    --accent-color: #47b1db;
+  }
+  
+  [data-theme="dark"] {
+    --accent-color: #5fc9f0;
+  }
+  
+</style>
+
+
+
+
+
+      <script src="/js/main.js"></script>
+
+
+  
+  
+    <script>
+window.MathJax = {
+  tex: {
+	
+    tags: "ams",               
+    displayMath: [['\\[','\\]'], ['$$','$$']], 
+    inlineMath: [['\\(','\\)']],
+	processEscapes: true,      
+    processEnvironments: true, 
+    processRefs: true,         
+    
+                               
+    
+    
+    
+    
+    
+  },
+  loader: { load: ['ui/safe'] }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  
+</head>
+<body class="site-wrapper">
+  <header>
+    <div class="header-wrapper">
+    <nav class="navbar" role="navigation">
+        
+        <div class="navbar-brand">
+            <a href="/">Adrian&#39;s Website</a>
+        </div>
+
+        
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        
+        <div class="navbar-menu" id="navbar-menu">
+            <div class="navbar-nav">
+               
+               
+                
+                    <a href="/about/" class="nav-link ">
+                        About
+                    </a>
+                 
+                    <a href="/publications/" class="nav-link ">
+                        Publications
+                    </a>
+                 
+                    <a href="/projects/" class="nav-link ">
+                        Projects
+                    </a>
+                 
+                    <a href="/posts/" class="nav-link ">
+                        Posts
+                    </a>
+                 
+                    <a href="/tags/" class="nav-link ">
+                        Tags
+                    </a>
+                 
+                    <a href="/files/cv_adrian_arustei.pdf" class="nav-link btn-solid">
+                        Get my CV
+                    </a>
+                
+             
+            </div>
+
+            <div class="navbar-actions">
+                
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+  </header>
+  <main class="site-main">
+    
+
+
+
+
+<article class="post-article">
+  <header class="post-header">
+    <h1 class="post-title">Symbolic Regression for a Non-elementary Integral</h1>
+    <div class="post-meta">
+      <time datetime="2026-05-27T00:00:00&#43;00:00">May 27, 2026</time>
+      <span class="post-meta-separator">•</span>
+      <span>2 min read</span>
+      
+      
+      <span class="post-meta-separator">•</span>
+      
+  <div class="terms-wrapper">
+    <div class="terms-label">Tags:</div>
+    <ul class="terms-list">
+        <li class="terms-item"><a href="/tags/symbolic-regression/">Symbolic Regression</a></li>
+        <li class="terms-item"><a href="/tags/genetic-algortihm/">Genetic Algortihm</a></li>
+        <li class="terms-item"><a href="/tags/integrals/">Integrals</a></li>
+        <li class="terms-item"><a href="/tags/optimization/">Optimization</a></li>
+        <li class="terms-item"><a href="/tags/math/">Math</a></li>
+    </ul>
+  </div>
+
+      
+    </div>
+    
+    <p class="post-summary">Closed-form approximations can be discovered for integrals without solutions in terms of elementary functions through symbolic regression</p>
+    
+  </header>
+
+  
+
+  <div class="post-content">
+    <h2 id="what-is-symbolic-regression">What is symbolic regression?</h2>
+<p>Consider the task of predicting the temperature of a cup of tea over time based on a few measurements. Estimating the relationship between a dependent variable and an independent variable is called regression analysis. These types of problems are very common in engineering, statistics, economics, etc. The simplest regression is a linear regression, which answers the following question: what line passes the closest to the given data points? Note how the question already made an assumption, namely that the fitted model is linear, that is, a line. But what if the model structure is unknown and we are free to choose any curve for fitting? How do we choose one? The control theory-related field that studies how to build models from measured inputs and outputs of a system is called system identification. However, if we purposefully seek models with closed-form, simple, mathematical expressions, then we are in the realm of <strong>symbolic regression</strong>, a topic more closely related to computer science.</p>
+<h2 id="the-fresnel-integral">The Fresnel Integral</h2>
+<p>Usually appearing in physics, the integral of sine of x squared is called a Fresnel Integral and may have slightly different <a href="https://mathworld.wolfram.com/FresnelIntegrals.html">definitions</a>. Since there is no closed-form solution in terms of elementary functions (such as polynomials, exponentials, logarithms), we will consider the task to approximate
+\begin{equation}
+S(u) := \int_0^u \sin(x^2) dx  \,.
+\end{equation}</p>
+<p>A couple of very clever approximations have been devised by <a href="https://medium.com/@masonprice_50176/non-elementary-integrals-approximating-the-impossible-2a98700bce2d">(Prince, 2022)</a>, of which the formula
+\begin{equation}
+a \cdot \tanh (x)+\frac{1}{2 x} \cdot\left(e^{-x^2}-\cos \left(x^2\right)\right) \approx \int \sin \left(x^2\right) d x
+\end{equation}
+is particularly intriguing due to its low error and simplicity.</p>
+<figure><img src="/posts/symb-regression/approx4.png"
+    alt="Pendulum angle \(\alpha(t)\) for the step input response obtained from the simulink model." width="500px"><figcaption>
+      <p>Pendulum angle \(\alpha(t)\) for the step input response obtained from the simulink model.</p>
+    </figcaption>
+</figure>
+
+<p>fafa fafa</p>
+
+  </div>
+
+  
+</article>
+
+
+  </main>
+  <footer class="site-footer">
+    <p align="center" class="copyright">Adrian&#39;s Website © 2026. All rights reserved.
+<br>
+  Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> using a modified <a href="https://github.com/yassi/hugo-theme-yassi" target="_blank" rel="noopener">Yassi</a> theme, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+</p>
+
+  </footer>
+  
+
+</body>
+</html>

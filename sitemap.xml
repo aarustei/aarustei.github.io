@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/tags/evolutionary-algorithms/</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/integrals/</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/math/</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/optimization/</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/symbolic-regression/</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/symbregression/</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/tags/deep-stall/</loc>
     <lastmod>2026-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/deepstall/deepstall/</loc>
-    <lastmod>2026-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>//localhost:1313/posts/deepstall/</loc>
     <lastmod>2026-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/longitudinal-stability/</loc>
-    <lastmod>2026-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
     <lastmod>2026-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
@@ -26,13 +44,10 @@
     <loc>//localhost:1313/projects/robootic-grasping/</loc>
     <lastmod>2022-12-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2022-12-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/control-systems/</loc>
     <lastmod>2022-12-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/engineering/</loc>
+    <loc>//localhost:1313/tags/engineering/</loc>
     <lastmod>2022-12-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/matlab/</loc>
@@ -41,7 +56,7 @@
     <loc>//localhost:1313/tags/mechatronics/</loc>
     <lastmod>2022-12-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/robotics/</loc>
+    <loc>//localhost:1313/tags/robotics/</loc>
     <lastmod>2022-12-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/space-robotics/</loc>
@@ -59,9 +74,6 @@
     <loc>//localhost:1313/tags/aerodynamics/</loc>
     <lastmod>2019-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/cfd/</loc>
-    <lastmod>2019-01-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/cfd/</loc>
     <lastmod>2019-01-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -74,7 +86,7 @@
     <loc>//localhost:1313/projects/aircraft-stability-analysis-cfd/</loc>
     <lastmod>2019-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/prototype/</loc>
+    <loc>//localhost:1313/tags/prototype/</loc>
     <lastmod>2019-01-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/prototype-aircraft/</loc>
