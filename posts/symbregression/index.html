@@ -188,7 +188,10 @@ S(x) := \int_0^x \sin(t^2) dt  \,.
 \end{equation}</p>
 <p>A couple of very clever approximations have been devised by <a href="https://medium.com/@masonprice_50176/non-elementary-integrals-approximating-the-impossible-2a98700bce2d">(Prince, 2022)</a>, of which the formula
 \begin{equation}
-A_1(x) :=  a \cdot \tanh (x)+\frac{1}{2 x} \cdot\left(e^{-x^2}-\cos \left(x^2\right)\right) \approx \int \sin \left(x^2\right) d x
+\begin{aligned}
+A_1(x) &amp;:=  a \cdot \tanh (x)+\frac{1}{2 x} \cdot\left(e^{-x^2}-\cos \left(x^2\right)\right) \\
+&amp;\approx \int \sin \left(x^2\right) d x
+\end{aligned}
 \end{equation}
 is particularly intriguing due to its low error and simplicity.</p>
 <figure><img src="/posts/symbregression/approx4.png"
@@ -224,9 +227,22 @@ RMSE_1 &amp;= \sqrt{\frac{1}{20}\int_{-10}^{10}\left(S(x) - A_1(x)\right)^2 dx} 
 
 <p>Of course two of the constants can be furuther simplified. After a retuning of parameters, we found a new approximation
 \begin{equation}
-A_2(x) :=  \left(\tanh(c_1 x^3) + \frac{\tanh(c_2 x) \cos(x^2) \tanh(c_3 x^3)}{c_4 x} \right) c_5 \approx \int \sin \left(x^2\right) d x
+\begin{aligned}
+A_2(x) &amp;:=  \left(\tanh(c_1 x^3) + \frac{\tanh(c_2 x) \cos(x^2) \tanh(c_3 x^3)}{c_4 x} \right) c_5 \\
+&amp;\approx \int \sin \left(x^2\right) d x
+\end{aligned}
 \end{equation}
-where the constants have the values \([c_1, c_2, c_3, c_4, c_5] = [0.7120, 1.1521, -0.3298, 1.2428, 0.6277]\). How good is it? Well, the RMSE becomes
+where the constants have the values
+\begin{equation}
+\begin{bmatrix}
+c_1\\
+c_2\\
+c_3\\
+c_4\\
+c_5
+\end{bmatrix} = \begin{bmatrix}0.7120\\ 1.1521\\ -0.3298\\ 1.2428\\ 0.6277\end{bmatrix} \,.
+\end{equation}
+How good is it? Well, the RMSE becomes
 \begin{equation}
 \begin{aligned}
 RMSE_2 &amp;= \sqrt{\frac{1}{20}\int_{-10}^{10}\left(S(x) - A_2(x)\right)^2 dx} \\
