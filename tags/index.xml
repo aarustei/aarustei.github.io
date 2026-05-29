@@ -2,157 +2,157 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Adrian&#39;s Website</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://aarustei.github.io/tags/</link>
     <description>Recent content in Tags on Adrian&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aarustei.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Evolutionary Algorithms</title>
-      <link>http://localhost:1313/tags/evolutionary-algorithms/</link>
+      <link>https://aarustei.github.io/tags/evolutionary-algorithms/</link>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/evolutionary-algorithms/</guid>
+      <guid>https://aarustei.github.io/tags/evolutionary-algorithms/</guid>
       <description></description>
     </item>
     <item>
       <title>Integrals</title>
-      <link>http://localhost:1313/tags/integrals/</link>
+      <link>https://aarustei.github.io/tags/integrals/</link>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/integrals/</guid>
+      <guid>https://aarustei.github.io/tags/integrals/</guid>
       <description></description>
     </item>
     <item>
       <title>Math</title>
-      <link>http://localhost:1313/tags/math/</link>
+      <link>https://aarustei.github.io/tags/math/</link>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/math/</guid>
+      <guid>https://aarustei.github.io/tags/math/</guid>
       <description></description>
     </item>
     <item>
       <title>Optimization</title>
-      <link>http://localhost:1313/tags/optimization/</link>
+      <link>https://aarustei.github.io/tags/optimization/</link>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/optimization/</guid>
+      <guid>https://aarustei.github.io/tags/optimization/</guid>
       <description></description>
     </item>
     <item>
       <title>Symbolic Regression</title>
-      <link>http://localhost:1313/tags/symbolic-regression/</link>
+      <link>https://aarustei.github.io/tags/symbolic-regression/</link>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/symbolic-regression/</guid>
+      <guid>https://aarustei.github.io/tags/symbolic-regression/</guid>
       <description></description>
     </item>
     <item>
       <title>Deep Stall</title>
-      <link>http://localhost:1313/tags/deep-stall/</link>
+      <link>https://aarustei.github.io/tags/deep-stall/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/deep-stall/</guid>
+      <guid>https://aarustei.github.io/tags/deep-stall/</guid>
       <description></description>
     </item>
     <item>
       <title>Longitudinal Stability</title>
-      <link>http://localhost:1313/tags/longitudinal-stability/</link>
+      <link>https://aarustei.github.io/tags/longitudinal-stability/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/longitudinal-stability/</guid>
+      <guid>https://aarustei.github.io/tags/longitudinal-stability/</guid>
       <description></description>
     </item>
     <item>
       <title>Control Systems</title>
-      <link>http://localhost:1313/tags/control-systems/</link>
+      <link>https://aarustei.github.io/tags/control-systems/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/control-systems/</guid>
+      <guid>https://aarustei.github.io/tags/control-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Engineering</title>
-      <link>http://localhost:1313/tags/engineering/</link>
+      <link>https://aarustei.github.io/tags/engineering/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/engineering/</guid>
+      <guid>https://aarustei.github.io/tags/engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>MATLAB</title>
-      <link>http://localhost:1313/tags/matlab/</link>
+      <link>https://aarustei.github.io/tags/matlab/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/matlab/</guid>
+      <guid>https://aarustei.github.io/tags/matlab/</guid>
       <description></description>
     </item>
     <item>
       <title>Mechatronics</title>
-      <link>http://localhost:1313/tags/mechatronics/</link>
+      <link>https://aarustei.github.io/tags/mechatronics/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mechatronics/</guid>
+      <guid>https://aarustei.github.io/tags/mechatronics/</guid>
       <description></description>
     </item>
     <item>
       <title>Robotics</title>
-      <link>http://localhost:1313/tags/robotics/</link>
+      <link>https://aarustei.github.io/tags/robotics/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/robotics/</guid>
+      <guid>https://aarustei.github.io/tags/robotics/</guid>
       <description></description>
     </item>
     <item>
       <title>Space Robotics</title>
-      <link>http://localhost:1313/tags/space-robotics/</link>
+      <link>https://aarustei.github.io/tags/space-robotics/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/space-robotics/</guid>
+      <guid>https://aarustei.github.io/tags/space-robotics/</guid>
       <description></description>
     </item>
     <item>
       <title>Control Theory</title>
-      <link>http://localhost:1313/tags/control-theory/</link>
+      <link>https://aarustei.github.io/tags/control-theory/</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/control-theory/</guid>
+      <guid>https://aarustei.github.io/tags/control-theory/</guid>
       <description></description>
     </item>
     <item>
       <title>Linear Systems</title>
-      <link>http://localhost:1313/tags/linear-systems/</link>
+      <link>https://aarustei.github.io/tags/linear-systems/</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linear-systems/</guid>
+      <guid>https://aarustei.github.io/tags/linear-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Aerodynamics</title>
-      <link>http://localhost:1313/tags/aerodynamics/</link>
+      <link>https://aarustei.github.io/tags/aerodynamics/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/aerodynamics/</guid>
+      <guid>https://aarustei.github.io/tags/aerodynamics/</guid>
       <description></description>
     </item>
     <item>
       <title>CFD</title>
-      <link>http://localhost:1313/tags/cfd/</link>
+      <link>https://aarustei.github.io/tags/cfd/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cfd/</guid>
+      <guid>https://aarustei.github.io/tags/cfd/</guid>
       <description></description>
     </item>
     <item>
       <title>Conceptual Design</title>
-      <link>http://localhost:1313/tags/conceptual-design/</link>
+      <link>https://aarustei.github.io/tags/conceptual-design/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/conceptual-design/</guid>
+      <guid>https://aarustei.github.io/tags/conceptual-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Model Aircraft</title>
-      <link>http://localhost:1313/tags/model-aircraft/</link>
+      <link>https://aarustei.github.io/tags/model-aircraft/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/model-aircraft/</guid>
+      <guid>https://aarustei.github.io/tags/model-aircraft/</guid>
       <description></description>
     </item>
     <item>
       <title>Prototype</title>
-      <link>http://localhost:1313/tags/prototype/</link>
+      <link>https://aarustei.github.io/tags/prototype/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/prototype/</guid>
+      <guid>https://aarustei.github.io/tags/prototype/</guid>
       <description></description>
     </item>
     <item>
       <title>Prototype Aircraft</title>
-      <link>http://localhost:1313/tags/prototype-aircraft/</link>
+      <link>https://aarustei.github.io/tags/prototype-aircraft/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/prototype-aircraft/</guid>
+      <guid>https://aarustei.github.io/tags/prototype-aircraft/</guid>
       <description></description>
     </item>
   </channel>

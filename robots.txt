@@ -89,4 +89,4 @@ Disallow: /
 # --------------------------------------------------
 # 4. SITEMAP LOCATION
 # --------------------------------------------------
-Sitemap: http://localhost:1313/sitemap.xml
+Sitemap: https://aarustei.github.io/sitemap.xml

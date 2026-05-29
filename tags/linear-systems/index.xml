@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linear Systems on Adrian&#39;s Website</title>
-    <link>http://localhost:1313/tags/linear-systems/</link>
+    <link>https://aarustei.github.io/tags/linear-systems/</link>
     <description>Recent content in Linear Systems on Adrian&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 Dec 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linear-systems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aarustei.github.io/tags/linear-systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inverted Pendulum on a Cart</title>
-      <link>http://localhost:1313/projects/inverted-pendulum/</link>
+      <link>https://aarustei.github.io/projects/inverted-pendulum/</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/inverted-pendulum/</guid>
+      <guid>https://aarustei.github.io/projects/inverted-pendulum/</guid>
       <description>Design of a feedback loop for the stabilization of an inverted pendulum on a cart</description>
     </item>
   </channel>

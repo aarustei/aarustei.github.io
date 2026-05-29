@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Longitudinal Stability on Adrian&#39;s Website</title>
-    <link>http://localhost:1313/tags/longitudinal-stability/</link>
+    <link>https://aarustei.github.io/tags/longitudinal-stability/</link>
     <description>Recent content in Longitudinal Stability on Adrian&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/longitudinal-stability/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aarustei.github.io/tags/longitudinal-stability/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deep Stall Landing (work in progress)</title>
-      <link>http://localhost:1313/posts/deepstall/</link>
+      <link>https://aarustei.github.io/posts/deepstall/</link>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/deepstall/</guid>
+      <guid>https://aarustei.github.io/posts/deepstall/</guid>
       <description>Deep stall landing</description>
     </item>
   </channel>

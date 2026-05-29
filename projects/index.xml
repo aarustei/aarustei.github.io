@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Adrian&#39;s Website</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://aarustei.github.io/projects/</link>
     <description>Recent content in Projects on Adrian&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aarustei.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Autonomous Robotic Grasping for On-orbit Satellite Repair</title>
-      <link>http://localhost:1313/projects/robootic-grasping/</link>
+      <link>https://aarustei.github.io/projects/robootic-grasping/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/robootic-grasping/</guid>
+      <guid>https://aarustei.github.io/projects/robootic-grasping/</guid>
       <description>Path planning and controller design in MATLAB of a robotic arm that for grasping spinning satellites in orbit</description>
     </item>
     <item>
       <title>Inverted Pendulum on a Cart</title>
-      <link>http://localhost:1313/projects/inverted-pendulum/</link>
+      <link>https://aarustei.github.io/projects/inverted-pendulum/</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/inverted-pendulum/</guid>
+      <guid>https://aarustei.github.io/projects/inverted-pendulum/</guid>
       <description>Design of a feedback loop for the stabilization of an inverted pendulum on a cart</description>
     </item>
     <item>
       <title>Model Aircraft CFD Analysis</title>
-      <link>http://localhost:1313/projects/aircraft-stability-analysis-cfd/</link>
+      <link>https://aarustei.github.io/projects/aircraft-stability-analysis-cfd/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/aircraft-stability-analysis-cfd/</guid>
+      <guid>https://aarustei.github.io/projects/aircraft-stability-analysis-cfd/</guid>
       <description>Stability and performance analysis of an aircraft using computational fluid dynamics (CFD)</description>
     </item>
     <item>
       <title>Prototype Realization</title>
-      <link>http://localhost:1313/projects/prototype-realization/</link>
+      <link>https://aarustei.github.io/projects/prototype-realization/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/prototype-realization/</guid>
+      <guid>https://aarustei.github.io/projects/prototype-realization/</guid>
       <description>Design, build, and fly a humanitarian Unmanned Aerial Vehicle (UAV)</description>
     </item>
   </channel>

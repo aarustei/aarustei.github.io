@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prototype Aircraft on Adrian&#39;s Website</title>
-    <link>http://localhost:1313/tags/prototype-aircraft/</link>
+    <link>https://aarustei.github.io/tags/prototype-aircraft/</link>
     <description>Recent content in Prototype Aircraft on Adrian&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Jan 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/prototype-aircraft/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aarustei.github.io/tags/prototype-aircraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prototype Realization</title>
-      <link>http://localhost:1313/projects/prototype-realization/</link>
+      <link>https://aarustei.github.io/projects/prototype-realization/</link>
       <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/prototype-realization/</guid>
+      <guid>https://aarustei.github.io/projects/prototype-realization/</guid>
       <description>Design, build, and fly a humanitarian Unmanned Aerial Vehicle (UAV)</description>
     </item>
   </channel>
