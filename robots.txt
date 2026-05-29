@@ -1,0 +1,92 @@
+# --------------------------------------------------
+# 1. ALLOW: Trustworthy Search & Academic Crawlers
+# --------------------------------------------------
+# Major Global Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Scholarly / Academic Search Engines
+User-agent: SemanticScholarBot
+Allow: /
+
+# --------------------------------------------------
+# 2. DISALLOW: Known AI Scrapers & LLM Training Bots
+# --------------------------------------------------
+# OpenAI (ChatGPT & Training)
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Google AI (Blocks Gemini training; does NOT impact Google Search)
+User-agent: Google-Extended
+Disallow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: Claude-User
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Perplexity-User
+Disallow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta / LLaMA
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# Large Open Datasets & Other LLMs (e.g., Common Crawl, ByteDance, Cohere)
+User-agent: CCBot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: Diffbot
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: DeepSeekBot
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+
+# --------------------------------------------------
+# 3. FALLBACK: Block all unspecified robots
+# --------------------------------------------------
+User-agent: *
+Disallow: /
+
+# --------------------------------------------------
+# 4. SITEMAP LOCATION
+# --------------------------------------------------
+Sitemap: http://localhost:1313/sitemap.xml

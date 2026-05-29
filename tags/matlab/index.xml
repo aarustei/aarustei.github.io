@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MATLAB on Adrian&#39;s Website</title>
-    <link>//localhost:1313/tags/matlab/</link>
+    <link>http://localhost:1313/tags/matlab/</link>
     <description>Recent content in MATLAB on Adrian&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Autonomous Robotic Grasping for On-orbit Satellite Repair</title>
-      <link>//localhost:1313/projects/robootic-grasping/</link>
+      <link>http://localhost:1313/projects/robootic-grasping/</link>
       <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/robootic-grasping/</guid>
+      <guid>http://localhost:1313/projects/robootic-grasping/</guid>
       <description>Path planning and controller design in MATLAB of a robotic arm that for grasping spinning satellites in orbit</description>
     </item>
     <item>
       <title>Inverted Pendulum on a Cart</title>
-      <link>//localhost:1313/projects/inverted-pendulum/</link>
+      <link>http://localhost:1313/projects/inverted-pendulum/</link>
       <pubDate>Wed, 08 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/inverted-pendulum/</guid>
+      <guid>http://localhost:1313/projects/inverted-pendulum/</guid>
       <description>Design of a feedback loop for the stabilization of an inverted pendulum on a cart</description>
     </item>
   </channel>
