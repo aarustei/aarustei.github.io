@@ -1726,17 +1726,25 @@ h2 {
   }
 }
 
-/* Targets both MathJax v2 and v3 display blocks */
-mjx-container[display="true"], .MathJax_Display {
+/* 1. Target standard standalone block equations */
+mjx-container[display="true"] {
+    max-width: 100% !important;
+    min-width: 0 !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
-    max-width: 100% !important;
     display: block !important;
-    /* Smooth scrolling for mobile */
-    -webkit-overflow-scrolling: touch; 
-    /* Prevents the scrollbar from clipping subscripts */
-    padding-bottom: 5px; 
-    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 2. Target ONLY equations inside tables (fixes your Markdown table equations) */
+table mjx-container {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    display: inline-block !important;
+    vertical-align: middle;
 }
 
 

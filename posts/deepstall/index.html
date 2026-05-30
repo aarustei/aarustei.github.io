@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width">
 <title>Deep Stall Landing for a UAV | Adrian Arustei</title>
 
-      <link rel="stylesheet" href="/css/main.min.d69f5d85e5719f198b1a724faf4d7462bb45b6c07ffef68c381bb2d867fc8dd8.css" integrity="sha256-1p9dheVxnxmLGnJPr010YrtFtsB//vaMOBuy2Gf8jdg=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/main.min.c809413666beff0595f49b1adb985dbafc0fba9161fe3a2479c66602fa17e594.css" integrity="sha256-yAlBNma&#43;/wWV9Jsa25hduvwPupFh/jokecZmAvoX5ZQ=" crossorigin="anonymous">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,6 +55,9 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net">
+</script>
 
 <script>
 window.MathJax = {
@@ -64,7 +67,7 @@ window.MathJax = {
     inlineMath: [['\\(','\\)']],
 	processEscapes: true,      
     processEnvironments: true, 
-    processRefs: true,         
+    
     
                                
     
@@ -199,7 +202,7 @@ window.MathJax = {
 
   <div class="post-content">
     <h2 id="short-take-off-and-landing-stol">Short take-off and landing (STOL)</h2>
-<p>One of the design requirements for our <a href="https://aarustei.github.io/projects/prototype-realization/">prototype airplane</a> was the ability to take off and land over short distances. For small UAVs, easy short takeoffs can be achieved with catapults or bungees, which can be designed according to one&rsquo;s needs. But how can a short landing be achieved, given the limitations of a fixed geometry? One idea is to take advantage of an aerodynamic feature to reduce the UAV&rsquo;s forward speed to a minimum: deep stall.</p>
+<p>One of the design requirements for our <a href="/projects/prototype-realization">prototype airplane</a> was the ability to take off and land over short distances. For small UAVs, easy short takeoffs can be achieved with catapults or bungees, which can be designed according to one&rsquo;s needs. But how can a short landing be achieved, given the limitations of a fixed geometry? One idea is to take advantage of an aerodynamic feature to reduce the UAV&rsquo;s forward speed to a minimum: deep stall.</p>
 <figure><img src="/posts/deepstall/MG_5406_deepStallcropped.png"
     alt="Our team&rsquo;s model airplane in deep stall. Note the elevator deflection angle." width="500px"><figcaption>
       <p>Our team&rsquo;s model airplane in deep stall. Note the elevator deflection angle.</p>
@@ -247,14 +250,14 @@ This is a standard trick whenever the equation of motion is only a function of v
 </figure>
 
 <p>A particularity of this airplane was that the horizontal tail was all movable. In addition, it also had an elevator. This design would provide more control in the deep stall landing phase. In order to analyze it, a mathematical model was built considering only the wing and tail as surfaces that produce lift and drag (and aerodynamic moment). Figure 3 indicates all the positive signs of angles and forces. All the other components (fuselage, engine, propeller and its thrust/drag, and vertical tail) were ignored for simplicity. Also, the wing chord is aligned with the longitudinal axis of the fuselage, so there is no offset between the wing and fuselage. The UAV is in equilibrium (from the acceleration point of view) if all the resultant forces and moments are equal to 0. This can be written as
-\begin{align} %\small
+\begin{equation}
 \begin{aligned}
 L_W +L_{HT}\cos(\epsilon)+D_{HT}\sin(\epsilon)-W\cos(\gamma) &amp;= 0 \\
 D_W +D_{HT}\cos(\epsilon)-L_{HT}\sin(\epsilon)-W\sin(\gamma) &amp;= 0 \\
 W\cos(\theta)d_{xcg}+W\sin(\theta)d_{zcg}-L_{HT}\cos(\alpha-\epsilon)x_{HT}- \\
 -D_{HT}\sin(\alpha-\epsilon)x_{HT}+M_W+M_{HT} &amp;= 0
 \end{aligned}
-\end{align}
+\end{equation}
 where the aerodynamic forces correspond to the respective wing profile (NACA4412 for wing and NACA0012 for tail) and surface angle of attack.</p>
 
 <details>
