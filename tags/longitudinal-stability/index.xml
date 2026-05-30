@@ -6,14 +6,14 @@
     <description>Recent content in Longitudinal Stability on Adrian&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://aarustei.github.io/tags/longitudinal-stability/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Deep Stall Landing (work in progress)</title>
+      <title>Deep Stall Landing for a UAV</title>
       <link>https://aarustei.github.io/posts/deepstall/</link>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
       <guid>https://aarustei.github.io/posts/deepstall/</guid>
-      <description>Deep stall landing</description>
+      <description>Velocity and stability calculations for a model aircraft in deep stall</description>
     </item>
   </channel>
 </rss>

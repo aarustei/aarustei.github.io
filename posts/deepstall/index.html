@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Deep Stall Landing (work in progress) | Adrian&#39;s Website</title>
+<title>Deep Stall Landing for a UAV | Adrian&#39;s Website</title>
 
       <link rel="stylesheet" href="/css/main.min.4040e0237578f0f29c931e6b208ac9c10846c8a19f2a38c533e6cab1517aceee.css" integrity="sha256-QEDgI3V48PKckx5rIIrJwQhGyKGfKjjFM&#43;bKsVF6zu4=" crossorigin="anonymous">
 
@@ -166,11 +166,11 @@ window.MathJax = {
 
 <article class="post-article">
   <header class="post-header">
-    <h1 class="post-title">Deep Stall Landing (work in progress)</h1>
+    <h1 class="post-title">Deep Stall Landing for a UAV</h1>
     <div class="post-meta">
-      <time datetime="2026-05-12T00:00:00&#43;00:00">May 12, 2026</time>
+      <time datetime="2026-05-29T00:00:00&#43;00:00">May 29, 2026</time>
       <span class="post-meta-separator">•</span>
-      <span>1 min read</span>
+      <span>6 min read</span>
       
       
       <span class="post-meta-separator">•</span>
@@ -180,21 +180,124 @@ window.MathJax = {
     <ul class="terms-list">
         <li class="terms-item"><a href="/tags/deep-stall/">Deep Stall</a></li>
         <li class="terms-item"><a href="/tags/longitudinal-stability/">Longitudinal Stability</a></li>
+        <li class="terms-item"><a href="/tags/integral/">Integral</a></li>
     </ul>
   </div>
 
       
     </div>
     
-    <p class="post-summary">Deep stall landing</p>
+    <p class="post-summary">Velocity and stability calculations for a model aircraft in deep stall</p>
     
   </header>
 
   
 
   <div class="post-content">
-    <h2 id="how-it-works">How It Works</h2>
-<p>A particularity of this airplane was that the horizontal tail was all movable. In addition, it also had an elevator. Consequently, this design would provide more control in the deep stall landing phase.</p>
+    <h2 id="short-take-off-and-landing-stol">Short take-off and landing (STOL)</h2>
+<p>One of the design requirements for our <a href="https://aarustei.github.io/projects/prototype-realization/">prototype airplane</a> was the ability to take off and land over short distances. For small UAVs, easy short takeoffs can be achieved with catapults or bungees, which can be designed according to one&rsquo;s needs. But how can a short landing be achieved, given the limitations of a fixed geometry? One idea is to take advantage of an aerodynamic feature to reduce the UAV&rsquo;s forward speed to a minimum: deep stall.</p>
+<figure><img src="/posts/deepstall/MG_5406_deepStallcropped.png"
+    alt="Our team&rsquo;s model airplane in deep stall. Note the elevator deflection angle." width="500px"><figcaption>
+      <p>Our team&rsquo;s model airplane in deep stall. Note the elevator deflection angle.</p>
+    </figcaption>
+</figure>
+
+<h3 id="what-is-deep-stall">What is deep stall?</h3>
+<p>Stall refers to the aerodynamic condition of a wing that experiences a significant loss of lift and an increased drag, usually caused by a flow separation on the extrados (upper side of the wing). <a href="https://www.spacesafetymagazine.com/aerospace-engineering/spacecraft-design/what-is-a-stall/#:~:text=The%20deep%20stall%20affects%20aircraft,those%20with%20a%20T%2Dtail%20configuration.">Deep stall</a> is a similar condition in which a T-tail aircraft has its stabilizer in the turbulent wake of the stalled main wing. The name &lsquo;deep&rsquo; comes from the difficulty to recover since the stabilizer has almost no authority in such an airflow configuration. However, for a UAV, this stable flight mode may be preferable as a short landing maneuver. In our context, deep stall will mean a stable descent at high angles of attack. The main advantages of a deep stall landing are the possibility of landing the UAV in a narrow area and not requiring landing gear, thus reducing the aircraft&rsquo;s weight and drag. Two questions immediately arise: how fast does it land, and is it stable?</p>
+<h2 id="simplified-impact-velocity-calculation">Simplified impact velocity calculation</h2>
+<p>In a first approximation, we can consider the UAV descending vertically, only under the influence of weight and drag. Newton&rsquo;s second law reads
+\begin{equation}
+ma = W - D_{ds}\,,
+\end{equation}
+which expanded becomes
+\begin{equation}
+m\frac{dv}{dt}=W-\frac{1}{2}\rho S v^2 C_{ds} \,.
+\end{equation}
+For a preliminary design, we are interested in relating wing loading, drop height, and velocity at the impact. Applying the chain rule to the velocity seen as a function of distance traveled, we obtain the acceleration written as
+\begin{equation}
+\frac{dv}{dt}=\frac{dv}{dz}\frac{dz}{dt}=v\frac{dv}{dz} \, ,
+\end{equation}
+which inserted into Eq. (2) results in:
+\begin{equation}
+\frac{mv}{W-\frac{1}{2}\rho S{{v}^{2}}{{C}_{ds}}}dv=dz \,.
+\end{equation}</p>
+<p>Next, the terms to form wing loading are rearranged, and the left side is integrated from \(0\) to \(v_i\) (impact velocity), while the right side is integrated from \(0\) to \(H\) (landing height).
+</p>
+\[\int\limits_{0}^{{{v}_{i}}}{\frac{2v}{2g-g\rho \frac{S}{W}{{v}^{2}}{{C}_{ds}}}dv}=\int\limits_{0}^{H}{dz}\]<p>
+Solving this integral, a relation between wing loading, velocity at impact, and height of deep stall is obtained:
+\begin{equation}
+-\frac{W}{S}\frac{1}{\rho g C_{ds}}\ln \left( 1- \left(\frac{W}{S}\right)^{-1}\frac{\rho C_{ds} v_i^2}{2} \right) = H
+\end{equation}
+This is a standard trick whenever the equation of motion is only a function of velocity on the RHS. Usually it can be easily integrated as a function of position instead of time. Equation 5 may be solved numerically for \(W/S\) for a range of heights \(H\) and impact velocities \(v_i\). A contour plot is shown in Figure 2. For a \(20\text{ kg}\) aircraft with a \(1 \text{ m}^2\) wing area, a drop height of \(2\text{ m}\) would result in approximately \(7 \text{ m}/\text{s}\) velocity at impact. Reasonable, but still potentially dangerous.
+<figure><img src="/posts/deepstall/wingloadimpact.png"
+    alt="Wing loading as function of impact velocity and height." width="500px"><figcaption>
+      <p>Wing loading as function of impact velocity and height.</p>
+    </figcaption>
+</figure>
+</p>
+<h2 id="longitudinal-model-for-deep-stall-stability">Longitudinal model for deep stall stability</h2>
+<figure><img src="/posts/deepstall/deepstallforces.PNG"
+    alt="A more detailed force model for deep stall calculations." width="600px"><figcaption>
+      <p>A more detailed force model for deep stall calculations.</p>
+    </figcaption>
+</figure>
+
+<p>A particularity of this airplane was that the horizontal tail was all movable. In addition, it also had an elevator. This design would provide more control in the deep stall landing phase. In order to analyze it, a mathematical model was built considering only the wing and tail as surfaces that produce lift and drag (and aerodynamic moment). Figure 3 indicates all the positive signs of angles and forces. All the other components (fuselage, engine, propeller and its thrust/drag, and vertical tail) were ignored for simplicity. Also, the wing chord is aligned with the longitudinal axis of the fuselage, so there is no offset between the wing and fuselage. The UAV is in equilibrium (from the acceleration point of view) if all the resultant forces and moments are equal to 0. This can be written as
+\begin{align}
+\begin{aligned}
+L_W +L_{HT}\cos(\epsilon)+D_{HT}\sin(\epsilon)-W\cos(\gamma) &amp;= 0 \\
+D_W +D_{HT}\cos(\epsilon)-L_{HT}\sin(\epsilon)-W\sin(\gamma) &amp;= 0 \\
+W\cos(\theta)d_{xcg}+W\sin(\theta)d_{zcg}-L_{HT}\cos(\alpha-\epsilon)x_{HT}- \\
+-D_{HT}\sin(\alpha-\epsilon)x_{HT}+M_W+M_{HT} &amp;= 0
+\end{aligned}
+\end{align}
+where the aerodynamic forces correspond to the respective wing profile (NACA4412 for wing and NACA0012 for tail) and surface angle of attack.</p>
+
+<details>
+  <summary>More force details</summary>
+  <p>The tail lift force can in turn be written as
+\begin{equation}
+L_{HT} = \frac{1}{2}\rho S_{HT} v^2 C_{LHT}(\alpha_{HT})
+\end{equation}
+with the horizontal tail lift force as a function of angle of attack, deflection angle,
+and tail downwash,
+\begin{equation}
+\alpha_{HT} = \alpha-\delta-\epsilon\,.
+\end{equation}
+Two major assumptions were considered for the calculation of the tail downwash:</p>
+<ul>
+<li>the downwash \(\epsilon\) was calculated using an approximation based on Prandtl’s
+classical lifting-line theory;</li>
+<li>because at high angles of attack the tail is not in the wing’s wake anymore, a bump function is used to smoothly make the downwash 0 for angles of attack greater than 30 deg. This can be written as
+\begin{equation}
+\epsilon = \frac{2C_L(\alpha)}{\pi AR_W}e^{\frac{-1}{(1-(\alpha/0.523)^2)}+1} \quad \textrm{for} \quad  \alpha \in (-30^\circ ; 30^\circ) \quad \textrm{and 0 otherwise}.
+\end{equation}
+Also, a simple geometrical rule relates the path angle with pitch and angle of attack:
+\begin{equation}
+\gamma = \theta+\alpha  \,.
+\end{equation}</li>
+</ul>
+</details>
+
+<p>The system of 3 equations can be solved for 3 unknown variables. Giving the deflection angle \(\delta\), the remaining unknowns are the angle of attack, velocity, and the path angle (\(\alpha,v,\gamma\)). The system is nonlinear, so it is possible to obtain more than one solution. This was done by changing the initial guess when solving numerically to make the algorithm converge to different points.</p>
+<p>The stability results are presented in Figure 4, obtained by inserting a variable \(M\) in the right-hand side of the moment equation in the system from Eqs. (6). Then, for a given pair \((\delta,\alpha)\), one can find \((M,v,\gamma)\). One important remark is that there exists equilibrium for high angles of attack (above \(30^\circ\)), which indicates that a deep stall trimmed flight is possible. What is even more important is that these points are statically stable (negative slope at 0 crossing).</p>
+<figure class="wide-caption"><img src="/posts/deepstall/momaoa.PNG"
+    alt="Moment viewed as the imbalance in the pitch equation from Eqs. 6. The system is highly nonlinear, so the moment curves do not just shift upwards or downwards with the deflection angle \(\delta\), but also change their shape. Most importantly, there exists a stable solution (0 moment) at high angles of attack (the third intersection of the green curve and x-axis)." width="600px"><figcaption>
+      <p>Moment viewed as the imbalance in the pitch equation from Eqs. 6. The system is highly nonlinear, so the moment curves do not just shift upwards or downwards with the deflection angle \(\delta\), but also change their shape. Most importantly, there exists a stable solution (0 moment) at high angles of attack (the third intersection of the green curve and x-axis).</p>
+    </figcaption>
+</figure>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Deep stall velocity calculations have been performed using two mathematical models based on various assumptions. In the test flight a successful deep stall was achieved, with a somewhat problematic nose landing as shown in Figure 5. The flight experiment reinforced the need for an additional mechanism for catching the UAV at landing to prevent any possible damage.</p>
+<figure><img src="/posts/deepstall/Copy%20of%20_MG_5432-2_cropped.png"
+    alt="The landing with a deep stall on flat ground damaged the propeller. A method to safely catch the airplane is needed." width="500px"><figcaption>
+      <p>The landing with a deep stall on flat ground damaged the propeller. A method to safely catch the airplane is needed.</p>
+    </figcaption>
+</figure>
+
+<hr>
+<p>Credit goes to André M. for the pictures.</p>
+<hr>
 
   </div>
 

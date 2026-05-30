@@ -2,10 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://aarustei.github.io/tags/evolutionary-algorithms/</loc>
-    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
+    <loc>https://aarustei.github.io/tags/deep-stall/</loc>
+    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aarustei.github.io/posts/deepstall/</loc>
+    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://aarustei.github.io/</loc>
+    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aarustei.github.io/tags/integral/</loc>
+    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aarustei.github.io/tags/longitudinal-stability/</loc>
+    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aarustei.github.io/tags/</loc>
+    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aarustei.github.io/tags/evolutionary-algorithms/</loc>
     <lastmod>2026-05-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://aarustei.github.io/tags/integrals/</loc>
@@ -22,18 +37,6 @@
   </url><url>
     <loc>https://aarustei.github.io/posts/symbregression/</loc>
     <lastmod>2026-05-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://aarustei.github.io/tags/</loc>
-    <lastmod>2026-05-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://aarustei.github.io/tags/deep-stall/</loc>
-    <lastmod>2026-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://aarustei.github.io/posts/deepstall/</loc>
-    <lastmod>2026-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://aarustei.github.io/tags/longitudinal-stability/</loc>
-    <lastmod>2026-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://aarustei.github.io/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>

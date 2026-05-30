@@ -6,21 +6,21 @@
     <description>Recent content in Posts on Adrian&#39;s Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://aarustei.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Stall Landing for a UAV</title>
+      <link>https://aarustei.github.io/posts/deepstall/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://aarustei.github.io/posts/deepstall/</guid>
+      <description>Velocity and stability calculations for a model aircraft in deep stall</description>
+    </item>
     <item>
       <title>Symbolic Regression for a Non-elementary Integral</title>
       <link>https://aarustei.github.io/posts/symbregression/</link>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
       <guid>https://aarustei.github.io/posts/symbregression/</guid>
       <description>Closed-form approximations can be discovered for integrals without solutions in terms of elementary functions through symbolic regression</description>
-    </item>
-    <item>
-      <title>Deep Stall Landing (work in progress)</title>
-      <link>https://aarustei.github.io/posts/deepstall/</link>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://aarustei.github.io/posts/deepstall/</guid>
-      <description>Deep stall landing</description>
     </item>
   </channel>
 </rss>

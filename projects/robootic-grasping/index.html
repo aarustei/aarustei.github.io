@@ -190,7 +190,7 @@ window.MathJax = {
       
     </div>
     
-    <p class="post-summary">Path planning and controller design in MATLAB of a robotic arm that for grasping spinning satellites in orbit</p>
+    <p class="post-summary">Path planning and controller design in MATLAB of a robotic arm that grasps spinning satellites in orbit</p>
     
   </header>
 
@@ -249,7 +249,7 @@ By choosing the gains \(K_d\) and \(K_e\) positive, the error dynamics become st
     </figcaption>
 </figure>
 <h4 id="dexterous-space-study">Dexterous Space Study</h4>
-<p>To determine when and where the robotic arm should attempt a grasp, one can take into account the dexterous workspace of the manipulator. Defined as the space in which the manipulator can reach in any position, the dexterous workspace can be calculated by repeatedly solving the inverse kinematics problem on sampled points in the workspace. For each position, a number of 26 different orientations are attempted, keeping into account the rotational symmetries of the robot. In Figure 18, a contour plot of the dexterity is shown, measured by how many orientations could be reached at every point. Based on this metric, the preferable region for target capture is around (0.4 m, 0.25 m) from the base in the vertical plane.</p>
+<p>To determine when and where the robotic arm should attempt a grasp, one can take into account the dexterous workspace of the manipulator. Defined as the space in which the manipulator can reach in any position, the dexterous workspace can be calculated by repeatedly solving the inverse kinematics problem on sampled points in the workspace. For each position, a number of 26 different orientations are attempted, taking into account the rotational symmetries of the robot. In Figure 18, a contour plot of the dexterity is shown, measured by how many orientations could be reached at every point. Based on this metric, the preferable region for target capture is around (0.4 m, 0.25 m) from the base in the vertical plane.</p>
 <figure><img src="/projects/robootic-grasping/Dexterous_workspace2.png"
     alt="Dexterous workspace analysis." width="600px"><figcaption>
       <p>Dexterous workspace analysis.</p>
@@ -289,7 +289,7 @@ By choosing the gains \(K_d\) and \(K_e\) positive, the error dynamics become st
 <p>We successfully designed a framework for a robotic system capable of tracking and grasping a potentially spinning client in a space environment using an RRT path planner and a computed torque controller. The model incorporates the dynamics of the entire robotic arm. The arm is capable of grasping small, free-floating objects. The grasp stability was analyzed based on the minimum singular value of the grasp matrix.</p>
 <p>A current limitation is that the robot does not automatically reconfigure its grasp if the initial attempt is unstable. More planning logic can be added to address this, as well as more grasp metrics. The equations of motion can also be expanded to include relative dynamics or non-inertial terms.</p>
 <hr>
-<p>This project was part the Robotics and Control course at WSU and was completed in a team of two. I was responsible for the simulations and controller design shown above.</p>
+<p>This project was part of the Robotics and Control course at WSU and was completed in a team of two. I was responsible for the simulations and controller design shown above.</p>
 <hr>
 <h3 id="references">References</h3>
 <ol>
