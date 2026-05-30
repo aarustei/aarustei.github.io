@@ -1726,3 +1726,17 @@ h2 {
   }
 }
 
+/* Targets both MathJax v2 and v3 display blocks */
+mjx-container[display="true"], .MathJax_Display {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    max-width: 100% !important;
+    display: block !important;
+    /* Smooth scrolling for mobile */
+    -webkit-overflow-scrolling: touch; 
+    /* Prevents the scrollbar from clipping subscripts */
+    padding-bottom: 5px; 
+    padding-top: 5px;
+}
+
+
