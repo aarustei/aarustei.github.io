@@ -226,7 +226,7 @@ which inserted into Eq. (2) results in:
 \[\int\limits_{0}^{{{v}_{i}}}{\frac{2v}{2g-g\rho \frac{S}{W}{{v}^{2}}{{C}_{ds}}}dv}=\int\limits_{0}^{H}{dz}\]<p>
 Solving this integral, a relation between wing loading, velocity at impact, and height of deep stall is obtained:
 \begin{equation}
--\frac{W}{S}\frac{1}{\rho g C_{ds}}\ln \left( 1- \left(\frac{W}{S}\right)^{-1}\frac{\rho C_{ds} v_i^2}{2} \right) = H
+\frac{-\frac{W}{S}}{\rho g C_{ds}}\ln \left( 1- \left(\frac{W}{S}\right)^{-1}\frac{\rho C_{ds} v_i^2}{2} \right) = H
 \end{equation}
 This is a standard trick whenever the equation of motion is only a function of velocity on the RHS. Usually it can be easily integrated as a function of position instead of time. Equation 5 may be solved numerically for \(W/S\) for a range of heights \(H\) and impact velocities \(v_i\). A contour plot is shown in Figure 2. For a \(20\text{ kg}\) aircraft with a \(1 \text{ m}^2\) wing area, a drop height of \(2\text{ m}\) would result in approximately \(7 \text{ m}/\text{s}\) velocity at impact. Reasonable, but still potentially dangerous.
 <figure><img src="/posts/deepstall/wingloadimpact.png"
@@ -243,7 +243,7 @@ This is a standard trick whenever the equation of motion is only a function of v
 </figure>
 
 <p>A particularity of this airplane was that the horizontal tail was all movable. In addition, it also had an elevator. This design would provide more control in the deep stall landing phase. In order to analyze it, a mathematical model was built considering only the wing and tail as surfaces that produce lift and drag (and aerodynamic moment). Figure 3 indicates all the positive signs of angles and forces. All the other components (fuselage, engine, propeller and its thrust/drag, and vertical tail) were ignored for simplicity. Also, the wing chord is aligned with the longitudinal axis of the fuselage, so there is no offset between the wing and fuselage. The UAV is in equilibrium (from the acceleration point of view) if all the resultant forces and moments are equal to 0. This can be written as
-\begin{align}
+\begin{align} \small
 \begin{aligned}
 L_W +L_{HT}\cos(\epsilon)+D_{HT}\sin(\epsilon)-W\cos(\gamma) &amp;= 0 \\
 D_W +D_{HT}\cos(\epsilon)-L_{HT}\sin(\epsilon)-W\sin(\gamma) &amp;= 0 \\
