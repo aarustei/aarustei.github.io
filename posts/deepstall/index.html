@@ -51,11 +51,15 @@
 
   
   
-    <script>
+    <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
+<script>
 window.MathJax = {
   tex: {
 	
-    tags: "ams",               
     displayMath: [['\\[','\\]'], ['$$','$$']], 
     inlineMath: [['\\(','\\)']],
 	processEscapes: true,      
@@ -68,20 +72,12 @@ window.MathJax = {
     
     
     
+	tags: "ams",                 
   },
-  loader: { load: ['ui/safe'] }
+   loader: { load: ['ui/safe'] },
+   chtml: { scale: 0.95 },
+   svg: { scale: 0.95 }
 };
-</script>
-
-<script>
-  window.MathJax = {
-    chtml: { scale: 0.9 },
-    svg: { scale: 0.9 }
-  };
-</script>
-
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
   
 </head>
@@ -222,7 +218,7 @@ which expanded becomes
 m\frac{dv}{dt}=W-\frac{1}{2}\rho S v^2 C_{ds} \,.
 \end{equation}
 For a preliminary design, we are interested in relating wing loading, drop height, and velocity at the impact. Applying the chain rule to the velocity seen as a function of distance traveled, we obtain the acceleration written as
-\begin{equation}
+\begin{equation} \label{eq:chainrule}
 \frac{dv}{dt}=\frac{dv}{dz}\frac{dz}{dt}=v\frac{dv}{dz} \, ,
 \end{equation}
 which inserted into Eq. (2) results in:
@@ -245,13 +241,13 @@ This is a standard trick whenever the equation of motion is only a function of v
 </p>
 <h2 id="longitudinal-model-for-deep-stall-stability">Longitudinal model for deep stall stability</h2>
 <figure><img src="/posts/deepstall/deepstallforces.PNG"
-    alt="A more detailed force model for deep stall calculations." width="600px"><figcaption>
+    alt="A more detailed force model for deep stall calculations." width="550px"><figcaption>
       <p>A more detailed force model for deep stall calculations.</p>
     </figcaption>
 </figure>
 
 <p>A particularity of this airplane was that the horizontal tail was all movable. In addition, it also had an elevator. This design would provide more control in the deep stall landing phase. In order to analyze it, a mathematical model was built considering only the wing and tail as surfaces that produce lift and drag (and aerodynamic moment). Figure 3 indicates all the positive signs of angles and forces. All the other components (fuselage, engine, propeller and its thrust/drag, and vertical tail) were ignored for simplicity. Also, the wing chord is aligned with the longitudinal axis of the fuselage, so there is no offset between the wing and fuselage. The UAV is in equilibrium (from the acceleration point of view) if all the resultant forces and moments are equal to 0. This can be written as
-\begin{align} \small
+\begin{align} %\small
 \begin{aligned}
 L_W +L_{HT}\cos(\epsilon)+D_{HT}\sin(\epsilon)-W\cos(\gamma) &amp;= 0 \\
 D_W +D_{HT}\cos(\epsilon)-L_{HT}\sin(\epsilon)-W\sin(\gamma) &amp;= 0 \\

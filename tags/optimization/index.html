@@ -51,11 +51,15 @@
 
   
   
-    <script>
+    <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
+<script>
 window.MathJax = {
   tex: {
 	
-    tags: "ams",               
     displayMath: [['\\[','\\]'], ['$$','$$']], 
     inlineMath: [['\\(','\\)']],
 	processEscapes: true,      
@@ -68,20 +72,12 @@ window.MathJax = {
     
     
     
+	tags: "ams",                 
   },
-  loader: { load: ['ui/safe'] }
+   loader: { load: ['ui/safe'] },
+   chtml: { scale: 0.95 },
+   svg: { scale: 0.95 }
 };
-</script>
-
-<script>
-  window.MathJax = {
-    chtml: { scale: 0.9 },
-    svg: { scale: 0.9 }
-  };
-</script>
-
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
   
 </head>
