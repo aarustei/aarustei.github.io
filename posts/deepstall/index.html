@@ -51,37 +51,43 @@
 
   
   
-    <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net">
-</script>
-
-<script>
+    <script>
 window.MathJax = {
   tex: {
-	
     displayMath: [['\\[','\\]'], ['$$','$$']], 
     inlineMath: [['\\(','\\)']],
-	processEscapes: true,      
-    processEnvironments: true, 
-    
-    
-                               
-    
-    
-    
-    
-    
-	tags: "ams",                 
+    processEscapes: true,
+    processEnvironments: true,
+    tags: "ams",
   },
-   loader: { load: ['ui/safe'] },
-   chtml: { scale: 0.95 },
-   svg: { scale: 0.95 }
+  loader: { load: ['ui/safe'] },
+  
+  
+  output: {
+    font: 'mathjax-newcm' 
+  },
+  
+    chtml: {
+     
+	 scale: 0.93
+    }
+  
+ 
+ 
+ 
+ 
+ 
 };
 </script>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+</script>
+
+
+
+
+
   
 </head>
 <body class="site-wrapper">
@@ -228,12 +234,13 @@ which inserted into Eq. (2) results in:
 \begin{equation}
 \frac{mv}{W-\frac{1}{2}\rho S{{v}^{2}}{{C}_{ds}}}dv=dz \,.
 \end{equation}</p>
-<p>Next, the terms to form wing loading are rearranged, and the left side is integrated from \(0\) to \(v_i\) (impact velocity), while the right side is integrated from \(0\) to \(H\) (landing height).
-</p>
-\[\int\limits_{0}^{{{v}_{i}}}{\frac{2v}{2g-g\rho \frac{S}{W}{{v}^{2}}{{C}_{ds}}}dv}=\int\limits_{0}^{H}{dz}\]<p>
+<p>Next, the terms to form wing loading are rearranged, and the left side is integrated from \(0\) to \(v_i\) (impact velocity), while the right side is integrated from \(0\) to \(H\) (landing height),
+\begin{equation*}
+\int\limits_{0}^{v_i} \frac{2v}{2g-g\rho \frac{S}{W} v^2 C_{ds}} dv = \int\limits_{0}^{H}{dz}\,.
+\end{equation*}
 Solving this integral, a relation between wing loading, velocity at impact, and height of deep stall is obtained:
 \begin{equation}
-\frac{-\frac{W}{S}}{\rho g C_{ds}}\ln \left( 1- \left(\frac{W}{S}\right)^{-1}\frac{\rho C_{ds} v_i^2}{2} \right) = H
+-\frac{W}{S}\frac{1}{\rho g C_{ds}}\ln \left( 1- \left(\frac{W}{S}\right)^{-1}\frac{\rho C_{ds} v_i^2}{2} \right) = H
 \end{equation}
 This is a standard trick whenever the equation of motion is only a function of velocity on the RHS. Usually it can be easily integrated as a function of position instead of time. Equation 5 may be solved numerically for \(W/S\) for a range of heights \(H\) and impact velocities \(v_i\). A contour plot is shown in Figure 2. For a \(20\text{ kg}\) aircraft with a \(1 \text{ m}^2\) wing area, a drop height of \(2\text{ m}\) would result in approximately \(7 \text{ m}/\text{s}\) velocity at impact. Reasonable, but still potentially dangerous.
 <figure><img src="/posts/deepstall/wingloadimpact.png"
